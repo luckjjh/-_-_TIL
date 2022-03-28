@@ -4,4 +4,4 @@
 ## 목차
 
 ### 03/28(월)
-[Orientation & HTML/CSS 강의 & 이두희님 특강](#0328readme.md)
+[Orientation & HTML/CSS 강의 & 이두희님 특강](#0328/README.md)
