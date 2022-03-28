@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
+
+* {
+  font-family: "Montserrat";
+}
+
+footer {
+  text-align: center;
+  background-color: #1e1e1e;
+  padding: 20px;
+  font-size: 12px;
+  color: #919191;
+}
+
+body,
+h1,
+h2 {
+  margin: 0px;
+  padding: 0px;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: bold;
+  font-style: italic;
+}
+h2 {
+  font-size: 20px;
+  font-weight: lighter;
+  color: #282828;
+  border-bottom: 1px solid #ebebeb;
+  margin-bottom: 16px;
+  padding-bottom: 5px;
+}
+
+.big_font {
+  font-size: 40px;
+}
+.small_font {
+  font-size: 20px;
+}
+
+.mainbox {
+  border: 1px solid #ebebeb;
+  width: 610px;
+  padding: 30px;
+  margin: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  /*div 가운데 정렬*/
+  /*마보패 => 바깥쪽부터 margin border padding*/
+  box-shadow: 0 1px 20px 0 rgba(0, 0, 0, 0.2);
+  /*박스에 그림자 넣는 코드*/
+  /*param1= 양수 => 오른쪽 / 음수 => 왼쪽으로 그림자 뻗어나감*/
+  /*param2= y축 그림자*/
+  /*param3= 그림자 흐림 정도*/
+  /*param4= 그림자 퍼짐 정도*/
+  /*param5= 그림자 색상 rgb로 표현 마지막은 투명도*/
+}
+
+.name-text {
+  font-size: 17px;
+  color: #7c7c7c;
+  font-weight: bold;
+}
+
+section {
+  margin-bottom: 24px;
+}
+
+.name-text {
+  font-size: 16px;
+  color: #7c7c7c;
+  font-weight: bold;
+}
+
+.about-me-text {
+  font-size: 10px;
+  line-height: 16px;
+  /*폰트 크기 1.6배가 가장 보기 좋은 줄 간격*/
+}
+
+.title-text {
+  font-size: 11px;
+  font-weight: bold;
+  color: #282828;
+  float: left;
+  /*html문서 안에 둥둥 떠다님*/
+  /*다른 글씨, 요소들이랑 겹쳐질 수 있음*/
+}
+
+.year-text {
+  font-size: 11px;
+  font-weight: bold;
+  color: #282828;
+  float: right;
+}
+/*float 요소들을 묶어서 다른 요소랑 안겹치게함*/
+.float-wrap {
+  overflow: hidden;
+  /*float 요소 묶어줌*/
+}
+
+.desc-text {
+  font-size: 9px;
+}
+
+.desc-subtext {
+  font-size: 9px;
+  color: #282828;
+  padding-left: 16px;
+}
+
+.title-box {
+  text-align: right;
+}
+
+.sns-img {
+  width: 12px;
+  height: 12px;
+}
+
+.img-box {
+  text-align: right;
+}
