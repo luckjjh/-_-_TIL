@@ -4,4 +4,4 @@
 ## 목차
 
 ### 03/28(월)
-[Orientation & HTML/CSS 강의 & 이두희님 특강](#0328/README.md)
+[Orientation & HTML/CSS 강의 & 이두희님 특강](https://github.com/luckjjh/LikeLion_FrontEndSchool_TIL/blob/main/0328/README.md)
