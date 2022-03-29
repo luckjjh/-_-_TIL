@@ -79,7 +79,7 @@
 **3. HTML Living Standard**
   HTML 문법 등을 규정한 표준.
   * XHTML과 HTML living standard </br>
-  XHTML은 웹페이지를 제작하기 위해 사용되는 HTML4를 XML에 맞도롣 재정의한 언어라 할 수 있다. </br>
+  XHTML은 웹페이지를 제작하기 위해 사용되는 HTML4를 XML에 맞도록 재정의한 언어라 할 수 있다. </br>
   HTML5보다 조금 더 구조화된 형식과 엄격한 문법을 갖고 있다.
   ![image](https://user-images.githubusercontent.com/68142773/160562093-f3751f2e-c956-4977-a88b-e3820f407cf5.png)
   
