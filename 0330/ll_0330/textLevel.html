@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>textLevel</title>
+    <style>
+      #명언 {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <br> tag 줄바꿈을 위힌 tag -->
+    <p style="white-space: normal">
+      <!-- white-space: normal => 공백 만나면 줄바꿈 해라 -->
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />Numquam ut,
+      aperiam qui culpa quibusdam nam excepturi ipsam esse deserunt fugiat
+      debitis explicabo quidem odio quis mollitia ullam quod ab architecto!
+    </p>
+
+    <!-- <wbr tag 텍스트 박스에서  한줄로 표시 안될때 줄바꿈 -->
+    <p style="white-space: nowrap">
+      <!-- white-space: nowrap => 공백 만나도 줄바꿈 안하고 계속 이어짐 -->
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. <wbr />Numquam
+      ut, aperiam qui culpa quibusdam nam excepturi ipsam esse deserunt fugiat
+      debitis explicabo quidem odio quis mollitia ullam quod ab architecto!
+    </p>
+
+    <!-- 한글은 단어 단위로 나뉘어지지 않음 -->
+    <!-- 웹브라우저 랜딩할때 한글 영어 차이 있기 때문 -->
+    <!-- word-break: keep-all style 부여해서 단어 단위로 줄바꿈 가능 -->
+    <p style="word-break: keep-all">
+      풀밭에 같지 전인 노년에게서 청춘의청춘의청춘의<wbr /> 방지. 전인 열락의
+      풀이 것이다.
+    </p>
+
+    <!-- hyper text를 만들때 사용. 링크 -->
+    <!-- a 요소 안에 a 가 가르키는 링크가 반드시 포함되어 있어야함 -->
+    <!-- target=_blank 추가해 새로운 창으로 링크 연결해줄 수 있음 -->
+    <a href="https://www.naver.com" target="_blank">네이버</a>
+
+    <!-- 연결된 link 다운로드 -->
+    <a href="./index.html" download>click</a>
+    <!-- 이름 지정 가능 -->
+    <a href="./hello.hwp" download="a.hwp">hwp download click</a>
+
+    <!-- 현재 페이지에서 태그로 이동 가능하게 함 목차 느낌 -->
+    <a href="#one">click1</a>
+    <a href="#two">click2</a>
+    <a href="#three">click3</a>
+    <section id="one" style="height: 100px">section 1</section>
+
+    <section id="two" style="height: 100px">section 2</section>
+
+    <section id="three" style="height: 100px">section 3</section>
+
+    <!-- b, striong bold 글씨체 태그, strong은 bold 글씨체에 중요도까지 더해 강조함 -->
+    <p><strong>hello</strong> adipisicing <b>elit</b></p>
+
+    <!-- i, em tag 기울임 글꼴을 나타냄. 전문용어 문단
+      주언어와 다른 언어로 표현된 부분, 등작인물의 생각이 표기된 부분
+      어떤 이유로 주위로 구분해야 하는 부분 표현할때 사용
+      em은 강조의미
+     -->
+    <p>시장안은 사람들의 활기로 가득차 있었다.</p>
+    <p>
+      상인 : 이 상품은 현재 <em>30%</em> 할인중입니다! 나 : 아하 그렇군요!
+      <i> '흠.. 왜 하필 지금 할인하는걸까?!' </i> 좀 더 구경하고 올게요!
+    </p>
+    <p>나는 상인의 의도를 의심할 수 밖에 없었다.</p>
+
+    <!-- dfn tag 현재 문맥에서 정의하고 있는 용어 나타냄 -->
+    <p>
+      <dfn>Lorem</dfn>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, illo?
+      Voluptate, molestias labore! Rerum accusantium quisquam magni, itaque quia
+      nulla corrupti, maiores doloribus natus laborum id necessitatibus, aut
+      deserunt cum.
+    </p>
+
+    <!-- abbr tag 약자를 나타내고 싶을때 사용 -->
+    <dl>
+      <dt>WWW</dt>
+      <dd>
+        <!-- title을 부여해 마우스 호버하면 title 나오게 함 -->
+        <dfn><abbr title="World Wide Web">WWW</abbr></dfn
+        >는 인터넷에 연결된 컴퓨터를 통해 사람들이 정보를 공유할 수 있는 전
+        세계적인 정보 공간을 말한다. - 위키백과
+      </dd>
+    </dl>
+
+    <!-- sup tag 위 첨자 sub tag 아래 첨자 
+      화학기호나 수학 공식등 첨자 기호를 사용해야하는 곳에서만 사용 -->
+    <p>H<sub>2</sub>0</p>
+    <p>x<sup>2</sup>=4</p>
+
+    <!-- span tag 별다른 의미 없이 줄 바꿈 없이 영역을 묶는 용도로 사용
+    여러 요소를 묶어 컨트롤하기 위한 영역으로 id, class를 사용함
+    div 와 마찬가지로 최후 수단으로 사용 -->
+    <p>
+      <span id="명언">제발 그만해.. 이러다 다~~ 죽어!</span>라고 오일남이
+      소리쳤습니다.
+    </p>
+  </body>
+</html>

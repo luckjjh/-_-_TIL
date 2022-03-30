@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Embedded Contents</title>
+  </head>
+  <body>
+    <!-- img tag html 페이지에 이미지를 삽입할때 사용하는 tag 
+    특징: 따로 닫는 tag가 없음 => 안에 content 를 넣거나 자식요소 추가 불가 
+    alt tag 접근성과 SEO에 도움을 줌 cf 장식, 디자인을 위한 요소는 alt 값을 비워둠
+    스크린 리더가 읽는데 오히려 불편하기 때문. alt 값 아예 입력안하면 파일명을 읽게됨
+    -->
+    <img src="/images/peng.png" alt="" title="펭귄" />
+
+    <!-- srcset tag 여러 해상도에서 대응해 브라우저가 최상의 이미지 로딩하는데 도움을 줌 
+    다양한 크기 가지는 동일 이미지를 최소 2개 이상일때 사용, 브라우저에게 선택권을 위임-->
+    <!-- x,w,sizes 속성 x는 화소의 밀도를 나타냄. 디바이스 화소 밀도에 따른 이미지를 로딩하도록
+    브라우저에게 알려줌 -->
+    <!-- 1px에 2개의 화소 들어감 1px에 3개의 화소 들어감 -->
+    <!-- w서술자와 x서술자 동시 사용 불가 -->
+    <!-- srcset은 explore에서 작동하지 않음으로 src를 기입하는 것이 필수! -->
+    <img
+      width="200px"
+      srcset="/images/peng.png 2x, /images/peng.png 3x"
+      src="/images/peng.png"
+      alt="test"
+    />
+    <hr />
+
+    <!-- size 속성 뷰포트 조건에 따라 이미지가 UI안에서 차지할 size 브라우저에 알려줌 -->
+    <img
+      srcset="
+        images/rabbit_500.png 500w,
+        images/rabbit_300.png 300w,
+        images/rabbit_150.png 150w
+      "
+      sizes="(min-width:960px) 500px,
+            (min-width:640px) 300px,
+            900px"
+      src="images/rabbit_150.png"
+      alt="rabbit"
+    />
+    <!-- 디바이스의 width에 따라 토끼 사진이 바뀜 -->
+    <!-- CSS 스타일과 충돌할 수 있음. CSS 스타일이 sizes 속성에 우선 -->
+    <hr />
+    <!-- picture tag는 source와 img를 통해 각기 다른 디스플레이, 디바이스에 따라
+    조건에 맞는 이미지를 보임 -->
+    <picture>
+      <source srcset="images/rabbit_500.png" media="(min-width:960px)" />
+      <source srcset="images/rabbit_300.png" media="(min-width:620px)" />
+      <img src="images/rabbit_150.png" alt="귀여운 아기 팽귄들" />
+    </picture>
+    <!-- media 속성이 속성 값동해 조건에 알맞는 이미지 정해줌 -->
+    <!-- 이미지를 표현하는 태그는 이미지 태그뿐 -->
+    <!-- type 속성을 추가해 이미지 포멧 타입을 브라우저에게 알려주는 것도 가능 -->
+    <!-- 이러한 방식의 크로스브라우징 기법을 "점진적 향상기법"이라고 함 -->
+    <!-- 너비에 따라 이미지를 변경할 수 있는데 picture는 이게 가능하지만 srcset으로 이미지를 변경하는 것은 불가-->
+
+    <!-- iframe tag는 현재 HTML페이지에서 또 다른 페이지를 보여주고 싶을 때 사용
+    width, height 값으로 크기 조절하고 default는 h:150px w:300px -->
+  </body>
+</html>
