@@ -1,0 +1,27 @@
+오늘 배울 거 
+GitHub
+
+CLI => 명령어 인터페이스
+
+git pull
+git add .
+=>commit할 파일 대기 시킴
+git commit
+=>파일들 보낼 준비
+git push
+=>파일 전송
+
+
+about/index.html -> https://paullabkorea.github.io/testrepo/about
+                            https://paullabkorea.github.io/testrepo/about/index.html
+about/test.html -> https://paullabkorea.github.io/testrepo/about/test.html
+kdt/index.html -> https://paullabkorea.github.io/testrepo/kdt
+edu/index.html -> https://paullabkorea.github.io/testrepo/edu
+
+javascript fetch() 알아보기
+비동기적으로 데이터 가져와서 뿌릴 수 있는거 연습
+프로그래머스 => 문제 스킬업 문제 풀어보기
+
+현업에서는 javascript 역량을 높게 평가함.
+
+https://www.toptal.com/developers/gitignore
