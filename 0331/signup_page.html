@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap");
+      * {
+        font-family: "NanumGothic";
+      }
+      h1 {
+        margin: 0px;
+        padding: 10px;
+        background-color: black;
+        color: white;
+      }
+      input {
+        margin: 5px;
+      }
+      fieldset {
+        font-size: 23px;
+        margin-bottom: 10px;
+      }
+      .signupBtn {
+        color: white;
+        background-color: black;
+        width: 20%;
+        height: 40px;
+        font-size: 20px;
+      }
+      label {
+        font-size: 20px;
+      }
+    </style>
+    <title>회원가입</title>
+  </head>
+  <body>
+    <header>
+      <h1>회원가입</h1>
+      <hr />
+    </header>
+    <main>
+      <section>
+        <form action="#" method="post">
+          <fieldset>
+            <legend>로그인 정보</legend>
+            <label for="userID">아이디</label><br />
+            <input type="text" name="아이디" id="userID" /><br />
+            <label for="userPW">비밀번호</label><br />
+            <input type="password" name="비밀번호" id="userPW" /><br />
+            <label for="userPWConfirm">비밀번호 확인</label><br />
+            <input type="password" name="비밀번호확인" id="userPWConfirm" />
+          </fieldset>
+          <fieldset>
+            <legend>회원 정보</legend>
+            <label for="userName">이름</label><br />
+            <input type="text" name="이름" id="userName" /><br />
+            <label for="userBirth">생년월일</label><br />
+            <input type="date" name="생년월일" id="userBirth" /><br />
+            <label for="userSex">성별</label><br />
+            <input type="radio" name="성별" id="userSex" value="male" />남
+            <input
+              type="radio"
+              name="성별"
+              id="userSex"
+              value="female"
+            />여<br />
+            <label for="userEmail">이메일</label><br />
+            <input type="email" name="이메일" id="userEmail" /><br />
+            <label for="userPhone">휴대전화</label><br />
+            <input type="tel" name="휴대전화" id="userPhone" /><br />
+          </fieldset>
+          <fieldset>
+            <legend>개인정보 제공 동의</legend>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio,
+              exercitationem beatae totam porro officia amet pariatur. Unde
+              neque, nostrum sunt facere itaque repellendus voluptatum fugit
+              obcaecati eius nemo nulla explicabo?
+            </p>
+            <label for="checkAgree">개인정보 제공에 동의합니다.</label>
+            <input type="checkbox" name="동의박스" id="checkAgree" />
+          </fieldset>
+          <button class="signupBtn">회원가입</button>
+        </form>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
+</html>

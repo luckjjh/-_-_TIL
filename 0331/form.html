@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form</title>
+  </head>
+  <body>
+    <!-- action : 어디로 보낼건지 -->
+    <!-- get => URL로써 요청을 보낸다. -->
+    <form action="/form.html" method="get">
+      <input type="text" name="userId" />
+      <input type="password" name="userPw" />
+      <!-- button의 submit 속성 default 값은 submit -->
+      <button type="submit">로그인</button>
+    </form>
+    <!-- => http://127.0.0.1:5500/form.html?userId=%EC%95%84%EC%9D%B4%EB%94%94&userPw=qlalfqjsgh
+    쿼리 스트링-->
+
+    <form action="/form.html" method="post">
+      <input type="text" name="userId" />
+      <input type="password" name="userPw" />
+      <!-- button의 submit 속성 default 값은 submit -->
+      <button type="submit">로그인</button>
+    </form>
+    <!-- post => URL이 아닌 body값으로 요청을 보냄 -->
+    <!-- id와 pw을 눈에 보이지 않는 패킷으로 감싸서 보내게됨 -->
+
+    <form action="">
+      <input type="text" name="userId" /></form><br>
+      <input type="password" name="userPw" /><br>
+      <input type="checkbox" name="" id="" /><br>
+      <!-- checkbox = 중복 선택 -->
+      <label for="men">남</label>
+      <!-- input 창을 설명하는 tag -->
+      <input type="radio" name="성별" id="man" />
+      <label for="female">여</label>
+      <input type="radio" name="성별" id="female" /><br>
+      <!-- radiobox = 단일 선택 -->
+      <input type="color" name="" id="" /><br>
+      <input type="date" name="" id="" /><br>
+      <input type="datetime" name="" id="" /><br>
+      <input type="email" name="" id="" /><br>
+      <input type="hidden" name="" id="" /><br>
+      <!-- hidden에 입력된 정보를 저장하고 전송해야 하는 경우가 생김 -->
+      <input type="range" name="" id="" /><br>
+      <input type="number" name="" id="" /><br>
+      <input type="url" name="" id="" /><br>
+      <input type="file" name="" id="" /><br>
+      <button type="submit">로그인</button>
+    </form>
+  </body>
+</html>
