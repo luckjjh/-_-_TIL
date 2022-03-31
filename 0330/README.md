@@ -1,4 +1,4 @@
-# 🔖LikeLion_FrontEndSchool_TIL 3월 30일 ()
+# 🔖LikeLion_FrontEndSchool_TIL 3월 30일 (수)
 ## 제주코딩베이스캠프 한재현 강사님의 강의
 ### 과제
 1. 주어진 웹페이지 구조 그리기
