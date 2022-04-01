@@ -1,0 +1,205 @@
+/*type selector라 명칭*/
+/*가장 기본이 되는 단위*/
+body {
+  /*브라우저마다 기본 사용자 에이전트 스타일 시트가 다르기 때문에
+    초기값을 지정해 줘야함.*/
+  background-image: url(images/background.gif);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  /* background 요소 따로 공부 */
+}
+
+body,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+} /*type selector는 위험하기 때문에 초기화 하는데만 사용*/
+
+h1,
+h2 {
+  margin: 0;
+  font-size: inherit;
+  font-weight: inherit;
+} /* h1 font-size를 initial로 초기화 하는 경우 현재 요소의 값이 우선순위가 더 높기 때문에 부모 요소의 값을 상속 받지못함 = > inherit value 사용해 부모의 요소를 상속 받음*/
+/* 상속되는 property는 mdn에서 확인 가능 */
+/* 상속이 지원되는 속성은 초기화할때 inherit 사용 / 지원하지 않는 속성은 initial 사용*/
+
+li {
+  list-style-type: none;
+  /* 목록 만들때 점 쓰지 않음 */
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  /* 부모에게 속성 들어갔어도 자식들 속성 적용시킬 경우 inherit */
+}
+
+.wrapper {
+  /*property: value*/
+  background-color: #ddd;
+  /*값을 지정하지 않았을 때 부모 요소의 value를 따라가거나 default 값으로 지정됨*/
+
+  width: 800px; /*auto: 부모 너비 기준으로 가득 채움*/
+  /* height: 400px; /*auto: 자식 기준으로 높이가 자동 조절됨*/
+  /* margin: 20px; /*div 기준 바깥쪽 여백*/
+  /* padding: 100px; /*content 영역과 border 사이 간의 거리*/
+  /* /*content 영역이 커지게 됨*/
+  /* border: 100px solid red; /*tag의 테두리*/
+  /*border가 두꺼워지면 content 영역도 커짐*/
+  /*박스의 주된 5가지 property => 박스 모델*/
+  /*가장 많이 사용하는 property들*/
+
+  /* margin-left: auto;
+  /* margin-right: auto;
+  /*남는 공간 여백을 자동으로 채우겠다.*/
+
+  margin: 100px auto;
+  /*상하 / 좌우 한번에 설적 가능*/
+  /*block level element의 좌우 정렬만 가능 why => 아래 공간은 div 영역이 아니기 때문*/
+}
+
+/* div 타입이면서 header class 가진 요소 */
+/* div는 생략 가능 */
+/* * =>universal selector  */
+.header {
+  background-image: url(images/cover04.png);
+  height: auto;
+  text-align: center;
+  color: white;
+  padding: 50px 0;
+  background-size: cover;
+  /* header에 지정된 color가 하위 요소들로 상속됨 */
+}
+
+/* combinator에 따라 selector가 달라짐 */
+/* 공백은 descendant selector */
+.header img.profile {
+  border: 7px solid white;
+  border-radius: 50%;
+}
+
+.header h1 {
+  /* h1의 범위를 안정적으로 잡기위해 descendant selector 사용 */
+  font-size: 100px;
+}
+.header p {
+  border-top: 4px solid;
+  /* width: fit-content;
+  /* CSS속성이 적용 안되는 브라우저 존재함 => CANIUSE로 확인가능 */
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 20px auto;
+}
+
+.section {
+  background-repeat: no-repeat;
+  background-position: right 30px center;
+  background-color: white;
+  background-color: white;
+  margin: 20px;
+  padding: 20px;
+  /* block element 요소는 겹치는 margin이 중첩 안됨 */
+}
+
+.section h2 {
+  color: salmon;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+/* 요소에 2개 이상의 class를 부여 가능 */
+.info {
+  background-image: url(images/icon-information.png);
+}
+
+.skill {
+  background-image: url(images/icon-skills.png);
+}
+
+/* component화 module화 */
+.list li {
+  border-left: 5px solid #ddd;
+  padding: 2px 10px;
+}
+
+.list li:hover {
+  border-color: pink;
+  color: pink;
+}
+
+.footer {
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+.icon {
+  /*a tag는 inline element => inline element는 width와 height의 개념 존재하지 않음*/
+  width: 48px;
+  height: 48px;
+  display: inline-block; /* 텍스트의 baseline 기준점으로 텍스트의 크키만큼 w,h로 요소 배치함. 
+  left, center, right 표현 가능*/
+  /* element를 다른 style로 표현하고 싶을때 사용 */
+  border-radius: 30px;
+  margin: 10px 0;
+  border: 2px solid #ddd;
+  color: white;
+  /* 이미지 스프라이트 기법 => 성능 향상을 위해 => 알아보기 */
+  background-image: url(images/icons.png);
+  text-indent: -9999px;
+  background-size: 144px 96px;
+}
+
+.icon.github {
+  background-color: black;
+  background-position: left top;
+}
+.icon.facebook {
+  background-color: dodgerblue;
+  background-position: center top;
+}
+.icon.contact {
+  background-color: orangered;
+  background-position: right top;
+}
+
+/* pseudo class */
+.icon:hover {
+  background-position-y: bottom;
+}
+
+/*background-color의 inital value는 transparent(투명)
+MDN에서 찾아 볼 수 있음*/
+
+/*수강생 질문 목록*/
+/* width: 100%와 width: auto 
+width: 100%=> 부모가 갖고있는 사용 가능한 크기만큼 가득 채움
+width: auto=> 부모가 갖고있는 사용 가능한 크키를 자동으로 채움
+차이점: margin을 줄때 auto는 자동으로 margin을 포함해 계산함 => 좀더 유연한 개념 무조건 좋은 개념
+width: nn%의 경우 50%를 만들어 내거나 상황마다 쓰이는 경우가 생김
+두 속성이 같다고 판단하기는 힘듦 */
+
+/*box-sizing: 기본은 content-box padding이 width에 더해짐
+border-box 속성 부여 통해 width에 영향 주지 않고 padding 부여 가능*/
+
+/* text-align:center와 margin:0 auto의 차이점
+text-align:center => tag내의 text가 가운데로 배치한것
+margin: 0 auto tag 자체를 가운데 정렬한 것
+*/
+
+/* reset-CSS 분석하기 */
+
+/* CSS 설계 프로세스
+1. 전체적인 덩어리 먼저 나누기
+2. 구분을 위해 시각적으로 백그라운드 컬러 주기
+3. 기본(레이아웃관련) 스타일만 작성. 안에 내용물 추가하기 전에 공간 마련
+4. CSS 파일 상단에 초기화 코드 작성에 raw한 상태로 만들기
+5. class 사용하며 섬세한 작업, 배치 시작*/
+
+/* CSS style 우선순위
+더 구체적인 선택자가 더 높은 우선순위를 갖게됨 */
+
+/* .a .b => descendant
+.a > .b => child*/

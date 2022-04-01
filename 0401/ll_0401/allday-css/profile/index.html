@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>PROFILE</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <!-- 웹을 만들때는 전체적인 틀(덩어리)를 봐야함 -->
+  <!-- CSS 작업은 top - down 방식 -->
+  <body>
+    <div class="wrapper">
+      <div class="header">
+        <img
+          class="profile"
+          src="images/profile01.png"
+          alt="단발머리 여자가 오른쪽 밑을 바라보는 사진"
+        />
+        <!-- base line이 존재해 base line 기준으로 배치가 됨-->
+        <!--img는 내가 표현하고 싶은 컨텐츠인 경우에 넣구요. background-image는 단순히 데코레이션, 꾸미는 용도의 이미지 삽입일 때 활용합니다. 프로필 사진은 내가 표현하고 싶은 (전달하고 싶은) 컨텐츠임으로 img를 활용-->
+        <h1>JH JUNG</h1>
+        <!--font-size: 2em; => 기본 font의 2배-->
+        <p>FRONTEND DEVELOPER</p>
+        <!--font-size: 1em = > 기본 font의 1배
+        parent 요소의 font 크기에 따라 변화함.-->
+        <!-- 태그들은 기본 사용자 CSS 값이 있기 때문에 CSS 선택자를 선언하고 초기화 해주는 작업을 제일 먼저 해야함-->
+      </div>
+      <div class="main">
+        <div class="section info">
+          <h2>Information</h2>
+          <ul class="list">
+            <li>Jung JungHyeon</li>
+            <li>luckjjh1@naver.com</li>
+            <li>Seoul, Korea</li>
+          </ul>
+        </div>
+        <div class="section skill">
+          <h2>Skills</h2>
+          <ul class="list">
+            <li>HTML+CSS</li>
+            <li>C++</li>
+            <li>FRONTEND</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer">
+        <a class="icon github" href="">GitHub</a>
+        <a class="icon facebook" href="">Facebook</a>
+        <a class="icon contact" href="">Contact</a>
+      </div>
+    </div>
+    <!-- 블록요소라서 한줄을 다 차지함.-->
+  </body>
+</html>
