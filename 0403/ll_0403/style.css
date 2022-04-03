@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap");
+* {
+  font-family: "NanumGothic";
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2 {
+  margin: 0;
+  font-size: inherit;
+  font-weight: inherit;
+}
+button {
+  border-width: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+input {
+  padding: 0;
+  border: 0;
+}
+
+body {
+  background-color: #ddd;
+  text-align: center;
+}
+label {
+  cursor: pointer;
+}
+
+.main {
+  margin: 0 auto;
+  width: 510px;
+}
+
+.banner {
+  background-color: red;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.logo {
+  display: inline-block;
+  width: 155px;
+  height: 30px;
+  margin-top: 100px;
+  background-position: 0 -51px;
+  background-image: url(images/naver_logo.png);
+  background-size: 244px 107px;
+  background-repeat: no-repeat;
+}
+
+.input-wrapper {
+  padding-bottom: 25px;
+  margin: 40px auto;
+  border-bottom: 1px solid #808080;
+}
+
+.input-box {
+  box-sizing: border-box;
+  margin: 5px;
+  width: 500px;
+  height: 50px;
+  color: #808080;
+  padding: 10px;
+  font-size: 18px;
+}
+
+.login-btn {
+  width: 500px;
+  margin: 5px;
+  height: 50px;
+  background-color: #04cf5c;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+}
+
+.input-keep {
+  display: inline-block;
+}
+
+.check-box-wrapper {
+  text-align: left;
+  padding: 10px 0;
+}
+
+.easy-login-title {
+  font-size: 20px;
+  margin-bottom: 25px;
+  font-weight: bold;
+}
+
+.easy-login-btn {
+  box-sizing: border-box;
+  padding: 15px 60px;
+  text-align: left;
+  display: inline-block;
+  width: 500px;
+  height: 50px;
+  margin: 5px 0;
+  background-size: 45px 45px;
+  background-position: 5px;
+  border: 1px solid #808080;
+  background-color: #ffffff;
+}
+
+.easy-login-btn.QR {
+  background-image: url(images/pngwing.com.png);
+  background-repeat: no-repeat;
+}
+
+.easy-login-btn.facebook {
+  background-image: url(images/facebook.png);
+  background-repeat: no-repeat;
+}
+.easy-login-btn.line {
+  background-image: url(images/LINE_icon01.png);
+  background-repeat: no-repeat;
+}
+
+.help-wrapper a {
+  border: 1px solid #04cf5c;
+  margin: 10px 20px;
+}

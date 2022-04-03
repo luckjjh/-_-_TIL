@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<style>
+			body {
+				background-color: #ddd;
+			}
+			.wrapper {
+				background-color: white;
+				width: 800px;
+				margin: 100px auto;
+				border-radius: 40px;
+				display: flow-root;
+			}
+
+			.wrapper h1 {
+				text-align: center;
+				font-size: 100px;
+				opacity: 0;
+				word-spacing: -200px;
+				transition: all .4s;
+			}
+
+			.wrapper:hover h1 {
+				word-spacing: 0;
+				opacity: 1;
+			}
+
+			.hobak {
+				width: 118px;
+				height: 118px;
+				margin: -100px auto -20px;
+				background-image: url(images/icon-close.png);
+				transition: transform .4s;
+			}
+
+			.wrapper:hover .hobak {
+				background-image: url(images/icon-open.png);
+				transform: translateY(-20%) scale(1.8) rotate(10deg);
+			}
+		</style>
+
+	</head>
+	<body>
+
+		<div class="wrapper">
+			<h1>CSS에 눈뜨다</h1>
+			<div class="hobak"></div>
+		</div>
+	</body>
+</html>
