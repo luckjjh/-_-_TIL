@@ -3,15 +3,31 @@
   font-family: "NanumGothic";
 }
 
-body {
+fieldset {
   margin: 0;
   padding: 0;
+  border: 0;
+}
+
+body,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+ul,
+li {
+  list-style: none;
 }
 h1,
 h2 {
   margin: 0;
   font-size: inherit;
   font-weight: inherit;
+}
+ul {
+  display: flex;
+  padding: 0 10px;
 }
 button {
   border-width: 0;
@@ -28,7 +44,7 @@ input {
 }
 
 body {
-  background-color: #ddd;
+  background-color: #f5f6f7;
   text-align: center;
 }
 label {
@@ -57,6 +73,16 @@ label {
   background-size: 244px 107px;
   background-repeat: no-repeat;
 }
+.signup-logo {
+  display: inline-block;
+  width: 155px;
+  height: 30px;
+  margin: 50px 0;
+  background-position: 0 -51px;
+  background-image: url(images/naver_logo.png);
+  background-size: 244px 107px;
+  background-repeat: no-repeat;
+}
 
 .input-wrapper {
   padding-bottom: 25px;
@@ -65,6 +91,7 @@ label {
 }
 
 .input-box {
+  border: #ffffff;
   box-sizing: border-box;
   margin: 5px;
   width: 500px;
@@ -72,6 +99,11 @@ label {
   color: #808080;
   padding: 10px;
   font-size: 18px;
+}
+
+.input-box:focus {
+  outline: none;
+  border: 2px solid #04cf5c;
 }
 
 .login-btn {
@@ -109,7 +141,6 @@ label {
   margin: 5px 0;
   background-size: 45px 45px;
   background-position: 5px;
-  border: 1px solid #808080;
   background-color: #ffffff;
 }
 
@@ -127,7 +158,44 @@ label {
   background-repeat: no-repeat;
 }
 
+.help-wrapper {
+  margin: 10px 0;
+  padding: 0 60px;
+}
+
 .help-wrapper a {
-  border: 1px solid #04cf5c;
   margin: 10px 20px;
+}
+
+.easy-login-btn:hover {
+  border: 1px solid #04cf5c;
+}
+
+.help-wrapper > ul > li::after {
+  content: "|";
+  float: right;
+}
+.help-wrapper > ul > li:last-child:after {
+  content: "";
+}
+
+.copyright-contents {
+  display: inline-block;
+  padding-left: 80px;
+  background-image: url(images/naver_logo.png);
+  background-position: -155px -48px;
+  background-size: 244px 107px;
+  background-repeat: no-repeat;
+}
+
+.agree-box {
+  border: 1px solid #808080;
+  margin: 20px 0;
+}
+
+.input-label {
+  text-align: left;
+  padding: 5px 10px;
+  font-size: 17px;
+  margin-top: 12px;
 }
