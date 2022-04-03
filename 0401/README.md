@@ -7,6 +7,8 @@
 1. CSS 이론
 
    - CSS 구조 설계 프로세스
+
+
      ![image](https://user-images.githubusercontent.com/68142773/161249479-14277839-fd7d-407a-841f-588c6da6a281.png)
 
      1. 설계할 웹의 전체적인 덩어리 나누기
@@ -18,7 +20,7 @@
 
    * type selector <br>
      가장 기본적인 선택자로 HTML 태그의 속성을 지정하는 선택자<br>
-     브라우저마다 기본 사용자 에이전트 스타일 시트(MDN에서 확인 가능)가 다르기 때문에 초기값을 지정해 태그를 다루기 쉽게 만들어야함
+     브라우저마다 기본 사용자 에이전트 스타일 시트(MDN에서 확인 가능)가 다르기 때문에 초기값을 지정해 태그를 다루기 쉽게 만들어야함 </br>
      ![image](https://user-images.githubusercontent.com/68142773/161250251-416a215f-45a4-42e0-b4c7-ff80490a19a4.png)
 
      ```css
