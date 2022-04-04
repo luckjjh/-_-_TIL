@@ -146,7 +146,7 @@ github 그룹을 생성해서 과제나 프로젝트 코드를 공유하고 서�
 
 - 실습: 구글 Form `<form>` tag 활용해서 구현하기
 
-  [코드](https://www.naver.com)
+  [코드링크](https://github.com/luckjjh/LikeLion_FrontEndSchool_TIL/tree/main/0404/%EC%8B%A4%EC%8A%B5)
 
   - 구현 화면
     ![127 0 0 1_5500_%EC%8B%A4%EC%8A%B5_index html](https://user-images.githubusercontent.com/68142773/161545863-0a093390-ad82-4f1f-931f-04de7124079d.png)
