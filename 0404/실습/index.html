@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/실습/style.css" />
+    <title>나와 잘 맞는 회사는?</title>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="title">나와 잘 맞는 회사는?</h1>
+      <p>가고 싶은 회사에 대한 호감도를 조사합니다. 아이고 의미 없다.</p>
+    </header>
+    <main class="main">
+      <section class="form-wrapper">
+        <form action="">
+          <fieldset class="fieldset">
+            <legend class="invisible">질문 1</legend>
+            <p>다음 문자중에 왠지 마음에 드는 것을 하나 고르세요.</p>
+            <label class="input-box">
+              <input
+                type="radio"
+                name="user-want"
+                id="naver"
+                value="naver"
+                required
+              />
+              네
+            </label>
+            <label class="input-box"
+              ><input type="radio" name="user-want" id="kakao" value="kakao" />
+              카
+            </label>
+            <label class="input-box"
+              ><input type="radio" name="user-want" id="line" value="line" /> 라
+            </label>
+            <label class="input-box"
+              ><input
+                type="radio"
+                name="user-want"
+                id="coupang"
+                value="coupang"
+              />
+              쿠
+            </label>
+            <label class="input-box"
+              ><input
+                type="radio"
+                name="user-want"
+                id="jecobes"
+                value="jecobe"
+              />
+              베
+            </label>
+          </fieldset>
+
+          <fieldset class="fieldset">
+            <legend class="invisible">질문 2</legend>
+            <p>
+              친구와 문자를 합니다. 다음중 어떤 메신저를 이용하시겠습니까? 모두
+              골라주세요.
+            </p>
+            <label class="input-box"
+              ><input
+                type="checkbox"
+                name="메신저"
+                id="kakaotalk"
+                value="kakaotalk"
+              />
+              카카오톡</label
+            >
+            <label class="input-box">
+              <input
+                type="checkbox"
+                name="메신저"
+                id="linemsg"
+                value="linemsg"
+              />
+              라인</label
+            >
+            <label class="input-box">
+              <input type="checkbox" name="메신저" id="insta" value="insta" />
+              인스타그램 디엠</label
+            >
+            <label class="input-box">
+              <input type="checkbox" name="메신저" id="nateon" value="nateon" />
+              네이트온</label
+            >
+            <label class="input-box">
+              <input type="checkbox" name="메신저" id="bdbd" value="bdbd" />
+              버디버디</label
+            >
+          </fieldset>
+          <fieldset class="fieldset">
+            <legend class="invisible">질문 3</legend>
+            <p>면접에서 자신의 포부를 한 문장으로 얘기한다면?</p>
+            <input
+              type="text"
+              placeholder="내 답변"
+              class="text-box"
+              required
+            />
+          </fieldset>
+
+          <fieldset class="fieldset">
+            <legend class="invisible">질문 4</legend>
+            <p>
+              당신은 지금 한 기업의 최종면접을 앞두고 있습니다. 면접장에
+              들어가기 직전, 자기 자신에게 해주고 싶은말은?
+            </p>
+
+            <input
+              type="text"
+              placeholder="내 답변"
+              class="text-box long"
+              required
+            />
+          </fieldset>
+          <fieldset class="fieldset">
+            <legend class="invisible">질문 5</legend>
+            <p>다음 중 기술 면접때 듣고 싶은 질문이 아닌것은?</p>
+            <input
+              type="text"
+              id="question"
+              list="ql"
+              name="question"
+              placeholder="선택"
+              class="datalist-box"
+              required
+            />
+            <datalist id="ql">
+              <option value="Java와 C++의 차이점"></option>
+              <option value="웹이 렌더링 되는 과정"></option>
+              <option value="쿠키와 세션에 대해"></option>
+            </datalist>
+          </fieldset>
+          <fieldset class="fieldset">
+            <legend class="invisible">질문 6</legend>
+            <p>취업을 희망하는 날짜를 선택해주세요.</p>
+            <label for="work_date" class="small-label">날짜</label>
+            <input type="date" id="work_date" class="time-box" required />
+          </fieldset>
+          <fieldset class="fieldset">
+            <legend class="invisible">질문 7</legend>
+            <p>업무를 시작 하기에 가장 적당한 시간을 고르세요.</p>
+            <input type="time" class="time-box" required />
+          </fieldset>
+          <div class="footer-wrapper">
+            <button class="btn">제출</button>
+            <a href="/실습/index.html" class="erase-btn"> 양식 지우기 </a>
+          </div>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>

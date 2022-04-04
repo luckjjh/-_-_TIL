@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap");
+* {
+  font-family: "NanumGothic";
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+p {
+  margin: 0;
+  padding: 0;
+  font-size: inherit;
+}
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  background-color: #f0ebf8;
+  padding: 10px 0;
+}
+
+.invisible {
+  display: none;
+}
+
+.header {
+  width: 900px;
+  margin: 10px auto;
+  box-sizing: border-box;
+  padding: 10px;
+  background-color: white;
+  border-radius: 10px;
+  border: 1px solid #aaaaaa;
+  border-top: 15px solid #6644aa;
+}
+.title {
+  font-size: 35px;
+  margin: 10px 15px;
+}
+.header > p {
+  font-size: 15px;
+  margin: 10px 15px;
+}
+.main {
+  box-sizing: border-box;
+  width: 900px;
+  margin: 0 auto;
+}
+
+.fieldset {
+  border: 1px solid #aaaaaa;
+  font-size: 20px;
+  margin: 15px auto;
+  background-color: white;
+  border-radius: 10px;
+  padding: 30px 25px;
+}
+
+.fieldset > p {
+  margin-bottom: 15px;
+}
+
+.input-box {
+  display: inline-block;
+  font-size: 18px;
+  padding: 10px;
+  width: 500px;
+}
+
+.text-box {
+  padding: 0 10px;
+  background-color: white;
+  border: 0;
+  font-size: 18px;
+  border-bottom: 1px solid #aaaaaa;
+  width: 450px;
+  height: 50px;
+}
+
+.text-box:focus {
+  outline: none;
+  border-bottom: 1px solid black;
+}
+
+.long {
+  width: 825px;
+}
+
+.datalist-box {
+  font-size: 18px;
+  width: 300px;
+  height: 40px;
+  padding: 10px 20px;
+}
+
+.small-label {
+  display: inline-block;
+  width: 800px;
+  font-size: 15px;
+  color: #aaaaaa;
+  margin: 10px 0;
+}
+.time-box {
+  margin-top: 10px;
+  width: 200px;
+  height: 40px;
+  border: 0;
+  border-bottom: 1px solid #aaaaaa;
+}
+.time-box:focus {
+  outline: none;
+  border-bottom: 1px solid black;
+}
+
+.btn {
+  border-style: initial;
+  width: 100px;
+  height: 50px;
+  font-size: 18px;
+  color: white;
+  background-color: #6644aa;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background-color: #8866bb;
+}
+
+.btn:active {
+  margin-left: 5px;
+  margin-top: 5px;
+  box-shadow: none;
+}
+.erase-btn {
+  margin: 10px;
+  float: right;
+  color: #6644aa;
+  font-size: 18px;
+}
