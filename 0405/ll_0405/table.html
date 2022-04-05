@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>table</title>
+    <style>
+      td,
+      th {
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <caption>
+        이달의 책 판매량
+      </caption>
+      <thead>
+        <tr>
+          <th>구분</th>
+          <th colspan="2">이름</th>
+          <th>판매량</th>
+          <!-- 열간 병합 -->
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+
+          <td>해리포터</td>
+          <td rowspan="2">100</td>
+        </tr>
+
+        <tr>
+          <td>1</td>
+
+          <td>해리포터2</td>
+          <!-- <td>100</td> -->
+        </tr>
+      </tbody>
+      <tfoot></tfoot>
+    </table>
+  </body>
+</html>

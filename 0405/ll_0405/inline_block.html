@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap"
+      rel="stylesheet"
+    />
+    <title>블록레벨 요소 VS 인라인 요소</title>
+    <style>
+      p {
+        display: block;
+        /* 한줄 다 차지하면서 block 요소는 너비 높이 조절 가능 */
+        width: 300px;
+        height: 300px;
+        background-color: aquamarine;
+      }
+      span {
+        font-size: 1rem;
+        display: inline-block;
+        /* 자기 자신의 contents 크기만큼 차지하면서 inline 요소는 너비, 높이 조절 불가 
+        요소를 글자처럼 취급*/
+        /* block과 inline의 특성을 사용하고 싶으면 inlin-block 사용 */
+        width: 150px;
+        height: 150px;
+        background-color: blueviolet;
+      }
+      .one {
+        /* inline 요소간 간격 없애기 위한 코드 */
+        /* HTML 문서를 작성하면 newline 을 누르게 되는데 newline이 공간을 차지하게 돼서 이를 없애기 위해 font-size를 0으로 지정 */
+        font-size: 0;
+      }
+      .two {
+        display: inline;
+        font-family: "Rubik Wet Paint", cursive;
+      }
+      .three {
+        /*line-height: 1;*/
+        /* 폰트가 다를때 위 공백을 없애기 위한 코드
+        좋은 방법은 아니다. 각 font마다 1의 값이 다르기 때문*/
+        line-height: 16px;
+        /* https://wit.nts-corp.com/2017/09/25/4903 */
+      }
+    </style>
+  </head>
+  <body>
+    <p>Hello world</p>
+    <p>Hello world</p>
+    <div class="one">
+      <span>hello world</span>
+      <span>hello world</span>
+    </div>
+    <div class="three">
+      <span class="two">h</span>ello <span class="two">h</span>ello
+    </div>
+  </body>
+</html>
