@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap");
+* {
+  font-family: "NanumGothic";
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+p,
+h2 {
+  font-size: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+ol,
+li {
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+}
+li {
+  margin: 0 10px;
+}
+main,
+header {
+  margin: 0 auto;
+  width: 50%;
+}
+
+table {
+  font-size: 15px;
+  padding: 0;
+  width: 100%;
+}
+td,
+th {
+  text-align: left;
+  vertical-align: top;
+  width: 32px;
+  height: 32px;
+}
+.header-text {
+  text-align: center;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.title {
+  margin: 10px 60px;
+  font-size: 75px;
+  font-weight: 900;
+  float: left;
+  color: #bf1e2e;
+}
+.sub-text {
+  margin-top: 45px;
+  margin-right: 75px;
+  font-size: 15px;
+  float: right;
+  color: #808080;
+  text-align: right;
+}
+
+.season-box {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.month-box {
+  display: inline-block;
+}
+
+.month {
+  font-size: 25px;
+  font-weight: 900;
+  margin: 5px;
+}
+
+.weekend {
+  color: #ee595a;
+}
+
+.month-box td:first-child {
+  color: #ee595a;
+}
+
+.month-box td:hover {
+  background-color: #bf1e2e;
+  border-radius: 5px;
+  margin: -1px;
+  color: white;
+  font-weight: bold;
+}
