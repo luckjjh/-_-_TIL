@@ -15,4 +15,6 @@
 [이종찬 강사님 CSS 특강](https://github.com/luckjjh/LikeLion_FrontEndSchool_TIL/tree/main/0401)
 
 ### 04/04(월)
-[임동준 강사님 워크샵 & 제주코딩베이스캠프 HTML ](https://github.com/luckjjh/LikeLion_FrontEndSchool_TIL/tree/main/0404)
+[임동준 강사님 워크샵 & 제주코딩베이스캠프 HTML 강의](https://github.com/luckjjh/LikeLion_FrontEndSchool_TIL/tree/main/0404)
+### 04/05(화)
+[제주코딩베이스캠프 HTML & CSS 강의](https://github.com/luckjjh/LikeLion_FrontEndSchool_TIL/tree/main/0405)
