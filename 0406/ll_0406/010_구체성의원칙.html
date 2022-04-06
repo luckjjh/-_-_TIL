@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>구체성의 원칙</title>
+    <style>
+      p.color-red {
+        /* 구체적인 선택자가 우선순위 높아서 빨간색이 p에 적용됨 */
+        color: red;
+        font-size: 20px;
+      }
+      p {
+        color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <p class="color-red">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque at ab sint
+      dicta voluptas nesciunt aperiam eveniet, ex adipisci, impedit laudantium
+      ipsa soluta exercitationem illum commodi temporibus animi quisquam
+      dignissimos?
+    </p>
+  </body>
+</html>

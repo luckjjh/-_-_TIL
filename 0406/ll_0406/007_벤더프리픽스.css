@@ -1,0 +1,13 @@
+/* autoprefixer 적용한 경우 */
+
+p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* autoprefixer 적용안한 경우 */
+
+span {
+  display: flex;
+}

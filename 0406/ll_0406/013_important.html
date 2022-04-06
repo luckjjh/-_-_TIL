@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>important</title>
+    <style>
+      button {
+        background-color: lightblue !important;
+      }
+      body button {
+        background-color: green;
+      }
+      button {
+        /* 같은 우선순위면 점수, 후위 우선순위에 따라 우선순위 정해짐*/
+        background-color: violet !important;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 많은 대규모 웹 사이트 및 앱에서 CSS의 문제는 우선순위를 유지하는 것이 너무 어려워 어느 시점에서 추가  !important 를 피하기 어렵습니다. 그리고 스타일을 섯불리 제거하거나 수정하면 다른 구성 요소가 손상될 수 있으므로 important를 사용합니다. -->
+    <button style="background-color: red">버튼</button>
+  </body>
+</html>

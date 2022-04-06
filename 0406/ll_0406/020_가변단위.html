@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Units</title>
+  </head>
+  <style>
+    body {
+      font-size: 10px;
+    }
+    p {
+      font-size: 2em;
+      /* body의 pixel 단위를 상속받고 배수 */
+    }
+    div {
+      font-size: 2em;
+    }
+    .one {
+      font-size: 2rem;
+    }
+
+    .two {
+      width: 50%;
+      /* 부모 width의 50% */
+      height: 200px;
+      background-color: royalblue;
+    }
+    .three {
+      width: 500px;
+      height: 400px;
+      background-color: aqua;
+    }
+    .four {
+      width: 50vw;
+      height: 200px;
+      background-color: blueviolet;
+    }
+    .five {
+      width: 500px;
+      height: 400px;
+      background-color: salmon;
+    }
+  </style>
+  <body>
+    <h1>Hello</h1>
+    <p>Hello</p>
+    <div>
+      <div>
+        <div>hello</div>
+        <!-- 내 부모가 갖은 font size를 배수로 쓰기 때문에 2^3으로 size가 80이 됨 -->
+      </div>
+    </div>
+
+    <div>
+      <div>
+        <div class="one">hello</div>
+        <!-- rem사용해서 중첩되는것을 막을수 있음 -->
+      </div>
+    </div>
+    <div>첫번째 실습은 px의 크기를 알아봅니다.</div>
+    <div class="three">
+      <div class="two"></div>
+    </div>
+    <div class="five">
+      <div class="four"></div>
+    </div>
+  </body>
+</html>

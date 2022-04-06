@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>가중치</title>
+    <style>
+      h1 {
+        color: red;
+      }
+      h1.test {
+        color: green;
+      }
+      .yellowgreen {
+        color: yellowgreen;
+      }
+      #fourth {
+        color: skyblue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>h1 첫번째</h1>
+    <h1 class="yellowgreen">h1 두번째</h1>
+    <h1 class="yellowgreen test">h1 세번째</h1>
+    <!-- test class 선택자가 더 구체적이라 test의 색상이 적용됨 -->
+    <h1 class="yellowgreen" id="fourth">h1 네번째</h1>
+  </body>
+</html>
