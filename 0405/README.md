@@ -1,4 +1,4 @@
-# 🔖LikeLion_FrontEndSchool_TIL 4월 05일 ()
+# 🔖LikeLion_FrontEndSchool_TIL 4월 05일 (화)
 
 ## 한재현 강사님 강의
 
