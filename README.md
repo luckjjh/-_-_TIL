@@ -7,16 +7,23 @@
 [Orientation & HTML/CSS 강의 & 이두희님 특강](https://github.com/luckjjh/LikeLion_FrontEndSchool_TIL/blob/main/0328/README.md)
 #### 03/29(화)
 [제주코딩베이스캠프 HTML 강의](https://github.com/luckjjh/LikeLion_FrontEndSchool_TIL/tree/main/0329)
+> HTML의 기초, Section 구분, HTML Tag의 용도
 #### 03/30(수)
 [제주코딩베이스캠프 HTML 강의](https://github.com/luckjjh/LikeLion_FrontEndSchool_TIL/tree/main/0330)
+> Grouping Contents, Text-level Semantics
 #### 03/31(목)
 [제주코딩베이스캠프 GitHub, HTML 강의](https://github.com/luckjjh/LikeLion_FrontEndSchool_TIL/tree/main/0331)
+> Embedded content, 로그인 페이지 구현, GitHub 활용 방법
 #### 04/01(금)
 [이종찬 강사님 CSS 특강](https://github.com/luckjjh/LikeLion_FrontEndSchool_TIL/tree/main/0401)
+> CSS type selector, CSS를 활용해 Profile 구현하기 
 ### 2주차
 #### 04/04(월)
 [임동준 강사님 워크샵 & 제주코딩베이스캠프 HTML 강의](https://github.com/luckjjh/LikeLion_FrontEndSchool_TIL/tree/main/0404)
+> 회고 피드백 방법에 대한 워크샵, form과 여러 type의 input 활용하기, 구글 form 구현하기
 #### 04/05(화)
 [제주코딩베이스캠프 HTML & CSS 강의](https://github.com/luckjjh/LikeLion_FrontEndSchool_TIL/tree/main/0405)
+> table 활용해 표 만들기, 월드컵 조편성 표 구현, 달력 표로 구현
 #### 04/06(수(
 [제주코딩베이스캠프 CSS 강의](https://github.com/luckjjh/LikeLion_FrontEndSchool_TIL/tree/main/0406)
+> CSS type selector, margin 병합현상, inline/block level 요소, selector 
