@@ -24,6 +24,6 @@
 #### 04/05(화)
 [제주코딩베이스캠프 HTML & CSS 강의](https://github.com/luckjjh/LikeLion_FrontEndSchool_TIL/tree/main/0405)
 > table 활용해 표 만들기, 월드컵 조편성 표 구현, 달력 표로 구현
-#### 04/06(수(
+#### 04/06(수)
 [제주코딩베이스캠프 CSS 강의](https://github.com/luckjjh/LikeLion_FrontEndSchool_TIL/tree/main/0406)
 > CSS type selector, margin 병합현상, inline/block level 요소, selector 
