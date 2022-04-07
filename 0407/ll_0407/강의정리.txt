@@ -1,0 +1,14 @@
+이호준 강사님 강의
+
+
+1. 과제 문제 풀이
+
+selector 사이에 위치하는 +
+
+A + B{
+    property:value;
+}
+A바로 뒤에 위치하는 B를 선택(자식요소 안됨)
+중간에 다른 요소 있으면 선택 안함.
+=>Banana, melon 빨간배경
+=>Banana, melon, Strawberry 큰 폰트

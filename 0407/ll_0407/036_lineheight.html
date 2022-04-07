@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>line height</title>
+    <style>
+      html,
+      body,
+      h1 {
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        border: 1px solid black;
+        width: 300px;
+        height: 300px;
+        font-size: 16px;
+        /* 1. 각 값들에게 고정 값으로 lineheight 부여 */
+        /*line-height: 1em;*/
+
+        /* 2. em으로 line height 부여*/
+        /*line-height: 1em;*/
+
+        /* 3. 1값을 사용하는 경우 개발자 도구에서 contents 높이가 43px인 것을 확인 할 수 있다. 없으면 값이 더 나옴 => leading 요소가 위아래로 존재하기 때문!
+        line-height:1 은 leading 영역을 없앰(폰트 높이에 딱 붙게됨).
+
+        padding 과 margin 관련하여 의미없음
+
+        기본 값은 normal
+        */
+        line-height: 1.6;
+      }
+      .one {
+        font-size: 10px;
+        border: 1px solid black;
+      }
+      .two {
+        font-size: 20px;
+        border: 1px solid black;
+      }
+      .three {
+        font-size: 30px;
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>hello world</h1>
+    <div class="container">
+      <div class="one">hello world</div>
+      <div class="two">hello world</div>
+      <div class="three">hello world</div>
+    </div>
+  </body>
+</html>
