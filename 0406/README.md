@@ -164,10 +164,6 @@
 
 ## 과제
 
-1. margin 병합현상 bloging
+1. [margin 병합현상 bloging 링크](https://velog.io/@luckjjh/%EB%A7%88%EC%A7%84-%EB%B3%91%ED%95%A9%EA%B2%B9%EC%B9%A8-%ED%98%84%EC%83%81%EC%97%90-%EB%8C%80%ED%95%B4)
 
-   [링크]()
-
-2. inline/block 요소 bloging
-
-   [링크]()
+2. [inline/block 요소 bloging 링크](https://velog.io/@luckjjh/block-level-%EC%9A%94%EC%86%8C-inline-level-%EC%9A%94%EC%86%8C)
