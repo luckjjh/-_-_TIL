@@ -26,4 +26,7 @@
 > table 활용해 표 만들기, 월드컵 조편성 표 구현, 달력 표로 구현
 #### 04/06(수)
 [제주코딩베이스캠프 CSS 강의](https://github.com/luckjjh/LikeLion_FrontEndSchool_TIL/tree/main/0406)
-> CSS type selector, margin 병합현상, inline/block level 요소, selector 
+> CSS type selector, margin 병합현상, inline/block level 속성, selector 
+#### 04/07(목)
+[제주코딩베이스캠프 CSS 강의](https://github.com/luckjjh/LikeLion_FrontEndSchool_TIL/tree/main/0407)
+> 가변길이단위 vmin/vmax, overflow 속성, background 속성, font/font icon 활용, line height, CSS 활용한 중앙정렬
