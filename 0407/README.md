@@ -244,4 +244,4 @@
 
    - CSS 중앙 정렬
 
-     [CSS 중앙 정렬 링크]()
+     [CSS 중앙 정렬 링크](https://velog.io/@luckjjh/CSS-%EC%A4%91%EC%95%99%EC%A0%95%EB%A0%AC-%EC%A0%95%EB%A6%AC)
