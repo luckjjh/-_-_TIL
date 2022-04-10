@@ -31,7 +31,7 @@
 [제주코딩베이스캠프 CSS 강의](https://github.com/luckjjh/LikeLion_FrontEndSchool_TIL/tree/main/0407)
 > 가변길이단위 vmin/vmax, overflow 속성, background 속성, font/font icon 활용, line height, CSS 활용한 중앙정렬
 #### 04/08(금)
-[프론트엔드스쿨 1기 수강생 특강 & 해봄님 노션 특강](https://github.com/luckjjh/LikeLion_FrontEndSchool_TIL/tree/main/0407)
+[프론트엔드스쿨 1기 수강생 특강 & 해봄님 노션 특강](https://github.com/luckjjh/LikeLion_FrontEndSchool_TIL/tree/main/0408)
 > 노션을 활용한 협업, 노션으로 간단한 이력서 작성하기
 #### 04/10(일)
 [천하제일캐릭터대회 캐릭터 디자인](https://github.com/luckjjh/LikeLion_FrontEndSchool_TIL/tree/main/0410)
