@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Character</title>
+    <style>
+      /* animation */
+
+      @keyframes earRight {
+        from {
+          transform: rotate(-20deg);
+        }
+        to {
+          transform: rotate(-40deg) translate(10px);
+        }
+      }
+      @keyframes earLeft {
+        from {
+          transform: rotate(20deg);
+        }
+        to {
+          transform: rotate(40deg) translate(-10px);
+        }
+      }
+
+      @keyframes tongueScale {
+        form {
+          transform: scale(1);
+        }
+        to {
+          transform: scale(1.3);
+        }
+      }
+
+      /* setting */
+      :root {
+        --pri: #ce705f;
+        --sec: #cc9e88;
+      }
+      /* reset */
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      /* layout */
+      /* design */
+
+      *,
+      *:after,
+      *:before {
+        box-sizing: border-box;
+      }
+
+      body {
+        background: rgb(113, 212, 121);
+      }
+
+      .kkun {
+        position: relative;
+        top: 100px;
+        margin: 50px auto;
+        width: 400px;
+        height: 380px;
+      }
+
+      .kkun .ear {
+        /* kkun이 relative라 kkun을 기준으로 좌표 시작됨  */
+        position: absolute;
+        top: 0;
+        width: 170px;
+        height: 250px;
+        border-radius: 50%;
+        border: 5px solid #232323;
+        background-color: var(--sec);
+        z-index: -2;
+      }
+
+      .kkun .ear.left {
+        top: 140px;
+        left: -65px;
+        transform: rotate(20deg);
+        border-radius: 82% 79% 50% 70%;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        animation: earLeft 1s infinite alternate;
+      }
+      .kkun .ear.right {
+        top: 140px;
+        right: -65px;
+        transform: rotate(-20deg);
+        border-radius: 79% 82% 70% 50%;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        animation: earRight 1s infinite alternate;
+      }
+
+      .kkun .face {
+        /*background-color: var(--sec);*/
+        position: absolute;
+        bottom: 0;
+        width: 400px;
+        height: 310px;
+        /*border: 10px solid #000;*/
+        border-radius: 50%;
+        background-color: transparent;
+      }
+
+      .kkun .eye {
+        position: absolute;
+        top: 140px;
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        background-color: #000;
+      }
+
+      .eye.right {
+        left: 120px;
+      }
+
+      .eye.left {
+        right: 120px;
+      }
+
+      .kkun .letina {
+        position: absolute;
+        top: 145px;
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        background-color: #fff;
+      }
+      .letina.right {
+        left: 125px;
+      }
+      .letina.left {
+        right: 135px;
+      }
+
+      .mouth.center {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        border: 10px solid #000;
+        border-radius: 50%;
+        top: 135px;
+        left: 165px;
+        background-color: #c94f53;
+      }
+
+      .mouth.right {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        border-bottom: 10px solid #000;
+        border-bottom-left-radius: 50%;
+        border-bottom-right-radius: 50%;
+        top: 185px;
+        left: 150px;
+        background-color: var(--sec);
+      }
+      .mouth.left {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        border-bottom: 10px solid #000;
+
+        border-radius: 50%;
+        top: 185px;
+        right: 150px;
+        background-color: var(--sec);
+      }
+
+      .nose {
+        position: absolute;
+        top: 195px;
+        left: 175px;
+        background: #000;
+        width: 45px;
+        height: 35px;
+        border-radius: 30% 30% 50% 50%;
+      }
+
+      .tongue {
+        position: absolute;
+        width: 30px;
+        height: 60px;
+        top: 210px;
+        left: 183px;
+        z-index: -1;
+        background-color: #c94f53;
+        border-radius: 30% 30% 50% 50%;
+        animation: tongueScale 2s infinite alternate;
+      }
+      .tongueline {
+        position: absolute;
+        top: 242px;
+        left: 183px;
+        width: 30px;
+        background-color: #000;
+        border: 2px solid #000;
+        border-radius: 30%;
+        transform: rotate(90deg);
+        border-radius: 50% 50% 50% 50%;
+      }
+
+      .kkun .face .hair-back {
+        position: absolute;
+        width: 120%;
+        left: 50%;
+        top: -120px;
+        z-index: -1;
+        transform: translateX(-50%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="kkun">
+      <div class="ear left"></div>
+      <div class="ear right"></div>
+      <div class="face">
+        <img class="hair-back" src="/Kkun_head_bg_1.png" alt="" />
+        <div class="tongue"></div>
+        <div class="mouth left"></div>
+        <div class="mouth right"></div>
+        <div class="eye right"></div>
+        <div class="letina right"></div>
+        <div class="eye left"></div>
+        <div class="letina left"></div>
+        <div class="nose"></div>
+        <div class="tongue"></div>
+        <div class="tongueline"></div>
+      </div>
+    </div>
+  </body>
+</html>
