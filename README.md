@@ -35,4 +35,6 @@
 > 노션을 활용한 협업, 노션으로 간단한 이력서 작성하기
 #### 04/10(일)
 [천하제일캐릭터대회 캐릭터 디자인](https://github.com/luckjjh/LikeLion_FrontEndSchool_TIL/tree/main/0410)
-
+#### 04/11(월)
+[제주코딩베이스캠프 CSS 강의](https://github.com/luckjjh/LikeLion_FrontEndSchool_TIL/tree/main/0411)
+> CSS 중앙정렬, position, sticky, fixed, z-index
