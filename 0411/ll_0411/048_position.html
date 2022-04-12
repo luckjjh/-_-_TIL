@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>position</title>
+    <style>
+      .container {
+        width: 500px;
+        height: 500px;
+        position: relative;
+        margin-left: 100px;
+        border: 5px solid black;
+        background-color: aqua;
+      }
+
+      .one {
+        width: 100px;
+        height: 100px;
+        border: 1px solid black;
+        color: white;
+      }
+      .one:nth-child(1) {
+        position: static;
+        background-color: red;
+      }
+      .one:nth-child(2) {
+        position: relative;
+        /* 원래 자기 위치에서 좌표 조정 가능 */
+        top: 10px;
+        left: 10px;
+        background-color: green;
+      }
+      .one:nth-child(3) {
+        position: static;
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="one">box1</div>
+      <div class="one">box2</div>
+      <div class="one">box3</div>
+    </div>
+  </body>
+</html>

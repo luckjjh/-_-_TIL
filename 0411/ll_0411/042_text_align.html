@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>text align</title>
+    <style>
+      div {
+        border: 5px solid black;
+        /*margin: 10px;*/
+        width: 800px;
+      }
+      span {
+        border: 3px solid blue;
+      }
+      .large {
+        height: 500px;
+      }
+      .text-center {
+        text-align: center;
+      }
+      .text-right {
+        text-align: right;
+      }
+      .text-left {
+        text-align: left;
+      }
+      h1 {
+        display: inline-block;
+      }
+
+      .one {
+        margin: 0 auto;
+      }
+
+      .width-full {
+        width: 100%;
+      }
+
+      .block {
+        width: 100px;
+        height: 100px;
+        display: block;
+      }
+      .two {
+        position: relative;
+        /* 자기 자신이 있어야할 위치에서 몇 px 이동할지 */
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      .three {
+        position: relative;
+        top: 50px;
+        right: 100px;
+      }
+
+      .four {
+        position: relative;
+        height: 500px;
+        width: 500px;
+      }
+
+      .five {
+        position: absolute;
+        border: solid 5px red;
+        width: 200px;
+        top: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+
+      .six {
+        position: absolute;
+        border: solid 5px red;
+        width: 50px;
+        top: 20px;
+        margin-right: auto;
+        margin-left: auto;
+        left: 0;
+        right: 0;
+      }
+      a {
+        display: block;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+        1. text-align문이 정렬 가능한 요소  (자식인 요소들을 중앙정렬)
+            1.1 자식인 인라인
+            1.2 자식인 블록
+            1.3 자식인 인라인 블록
+            1.4 text
+        2. margin: 0 auto (block요소를 중앙 정렬)
+            2.1  자기자신을 중앙정렬
+            2.2 블록요소가 전체 width를 가지고 있을 경우 원하는 중앙 정렬 결과를 얻을 수 없다.
+            2.3 자기 자신이 inline-block의 경우 사용할 수 없다.
+            2.4 inline 요소를 display: block으로 바꾼다음 width를 부모보다 좁게 지정하면 사용할 수 있다.
+        3. transform: translate(-50%)와 left:50%;
+            3.1 자기자신의 margin에 영향을 받을 수 있다.
+     -->
+    <div class="text-left">
+      <span>왼쪽정렬</span>
+    </div>
+    <div class="text-right">
+      <span>오른쪽정렬</span>
+    </div>
+    <div class="text-center">
+      <span>중앙정렬</span>
+    </div>
+    <div class="text-center">
+      <span>중앙정렬</span>
+      <p>hello world</p>
+      <h1>hello world</h1>
+      <form action="">
+        <input type="text" />
+      </form>
+      hello
+    </div>
+
+    <div class="text-center large">
+      <h1>hello world</h1>
+    </div>
+
+    <div class="one">
+      <span>hello world margin 0 auto - 1</span>
+    </div>
+
+    <div class="one width-full">
+      <span>hello world margin 0 auto</span>
+    </div>
+
+    <div>
+      <span class="one block">hello world margin 0 auto</span>
+    </div>
+
+    <div class="two">
+      <span>hello world margin 0 auto - 2</span>
+    </div>
+
+    <div>
+      <span class="two">hello world margin 0 auto</span>
+    </div>
+    <div class="three">hello</div>
+    <br /><br /><br />
+
+    <div class="four">
+      hello
+      <div class="five">hello</div>
+    </div>
+
+    <div class="four">
+      hello
+      <div class="six">hello</div>
+    </div>
+
+    <!-- 
+        위에 블록 요소를 주지 않고 
+        a를 block으로 한 다음 text-align:center를 줄 경우 
+        안에 click이 인라인 요소처럼 처리되어 중앙정렬이 됩니다.
+    -->
+    <a href="#">Click!</a>
+  </body>
+</html>

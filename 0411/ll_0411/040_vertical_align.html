@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <style>
+      .wrap {
+        background-color: bisque;
+        border: 1px solid blue;
+      }
+      .container {
+        display: inline;
+        border: 1px solid black;
+      }
+
+      .one {
+        vertical-align: top;
+        /* 이미지가 부모요소 안에서 배치 될때 뜨는 것을 해결하기 위함*/
+      }
+
+      .two {
+        vertical-align: middle;
+      }
+
+      .three {
+        margin: 0;
+        padding: 0;
+        display: inline-block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <img
+        class="one"
+        width="200px"
+        src="https://www.tvn-2.com/nacionales/Imagen-ilustrativa-gato-medio-bosque_18585331.jpg"
+        alt=""
+      />
+      <p class="three">yellow world</p>
+    </div>
+
+    <div class="container">
+      <img
+        width="200px"
+        src="https://www.tvn-2.com/nacionales/Imagen-ilustrativa-gato-medio-bosque_18585331.jpg"
+        alt=""
+      />
+      yello world
+    </div>
+
+    <br /><br />
+
+    <div class="container">
+      <img
+        width="200px"
+        class="one"
+        src="https://www.tvn-2.com/nacionales/Imagen-ilustrativa-gato-medio-bosque_18585331.jpg"
+        alt=""
+      />
+      yello world
+    </div>
+
+    <br /><br />
+
+    <!-- font에서 e의 중앙선이 middle입니다. -->
+    <div class="container">
+      <img
+        width="200px"
+        class="two"
+        src="https://www.tvn-2.com/nacionales/Imagen-ilustrativa-gato-medio-bosque_18585331.jpg"
+        alt=""
+      />
+      yello world
+    </div>
+  </body>
+</html>

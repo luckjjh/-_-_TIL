@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>말줄임</title>
+    <style>
+      div {
+        width: 200px;
+      }
+      .a {
+        width: 500px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+      .b {
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+      }
+    </style>
+  </head>
+  <body>
+    <p class="a">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate, sed
+      blanditiis obcaecati eos nemo laboriosam, maiores, reiciendis quod soluta
+      alias unde inventore ut nisi at tempore incidunt? Adipisci, ratione
+      accusamus.
+    </p>
+    <div>
+      <p class="b">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate, sed
+        blanditiis obcaecati eos nemo laboriosam, maiores, reiciendis quod
+        soluta alias unde inventore ut nisi at tempore incidunt? Adipisci,
+        ratione accusamus. Lorem ipsum, dolor sit amet consectetur adipisicing
+        elit. Voluptates exercitationem quam quis, harum fugit natus nobis error
+        officiis, eveniet nam culpa veniam ipsa, quae deleniti id sequi eaque
+        labore totam! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Nesciunt molestiae ipsum amet eveniet rerum illo dolorem corrupti
+        blanditiis officia maxime illum excepturi quaerat consectetur eaque,
+        fugit commodi mollitia sequi quae.
+      </p>
+    </div>
+  </body>
+</html>

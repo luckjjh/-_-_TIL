@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      div {
+        width: 425px;
+        height: 180px;
+        margin: 20px;
+        background-image: url("https://www.tvn-2.com/nacionales/Imagen-ilustrativa-gato-medio-bosque_18585331.jpg");
+        background-size: 100px auto;
+        border: 4px solid black;
+      }
+      .one {
+        background-position: 10px 10px;
+        background-size: cover;
+      }
+      .two {
+        background-position: 10px;
+        background-size: cover;
+      }
+      .three {
+        background-position: bottom 50px right 50px;
+        background-size: cover;
+      }
+      .four {
+        /* center, right, left, bottom, top */
+        background-position: center;
+        background-size: cover;
+      }
+      .five {
+        background-size: cover;
+      }
+
+      .six {
+        background-size: contain;
+        /* 주석처리 해보세요. */
+        background-repeat: no-repeat;
+      }
+
+      .seven {
+        width: 200px;
+        height: 400px;
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+
+      .eight {
+        /* 이미지의 넓이, 높이 */
+        background-size: 100% 100%;
+      }
+      /* cover: 좌측 상단부터 잘려서 배경이 들어감
+       contain: 이미지 비율에 따라 이미지가 배경으로 들어가지만 빈공간 생김
+       100% 100%: 이미지를 부모요소에 맞춰서 변형시켜 배경으로 들어감. 이미지에 왜곡이 생김
+
+      */
+    </style>
+  </head>
+  <body>
+    <div class="one"></div>
+    <div class="two"></div>
+    <div class="three"></div>
+    <div class="four"></div>
+    <div class="five"></div>
+    <div class="six"></div>
+    <div class="seven"></div>
+    <div class="eight"></div>
+  </body>
+</html>
