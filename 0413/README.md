@@ -1,4 +1,4 @@
-# 🔖LikeLion_FrontEndSchool_TIL 4월 12일 (화)
+# 🔖LikeLion_FrontEndSchool_TIL 4월 13일 (수)
 
 ## 이호준 강사님 강의
 
