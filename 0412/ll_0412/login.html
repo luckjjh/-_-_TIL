@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="./reset.css" />
+    <style>
+      .blind {
+        position: absolute;
+        clip: rect(0 0 0 0);
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+      }
+
+      .container-login-box {
+        margin: 20px auto;
+        width: 350px;
+        box-sizing: border-box;
+        border: 1px solid #dbdbdb;
+        border-radius: 5px;
+        padding: 18px 15px 17px;
+      }
+
+      .container-login-box .login-subtext {
+        margin-bottom: 16px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 15px;
+        color: black;
+      }
+      .container-login-box .login-link {
+        display: block;
+        padding: 10px 0 12px;
+        font-size: 12px;
+        background: #711bff;
+        border-radius: 4px;
+        line-height: 15px;
+        color: white;
+        text-align: center;
+      }
+      .login-link-icon {
+        margin-right: 4px;
+        vertical-align: bottom;
+        width: 64px;
+        height: 18px;
+      }
+      .clear-fix::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+      .container-find-idpw {
+        font-size: 12px;
+        margin-top: 16px;
+        float: left;
+      }
+      .container-sign-up {
+        font-size: 12px;
+        margin-top: 16px;
+        float: right;
+      }
+
+      .container-find-idpw .find-idpw-img {
+        margin-top: -2px;
+        margin-right: 4px;
+        float: left;
+        width: 16px;
+        height: 16px;
+      }
+      .container-find-idpw [class^="link"] {
+        float: left;
+      }
+      .container-sign-up .img-sign-up {
+        margin-top: -2px;
+        margin-right: 4px;
+        width: 16px;
+        height: 16px;
+      }
+      .container-sign-up [class$="sign-up"] {
+        float: left;
+      }
+      .link-id::after {
+        float: right;
+        display: block;
+        content: "";
+        width: 1px;
+        height: 12px;
+        margin: 0 4px;
+        background-color: #767676;
+      }
+    </style>
+  </head>
+  <body>
+    <article class="container-login-box clear-fix">
+      <h2 class="blind">위니브 로그인</h2>
+      <p class="login-subtext">더 편리해진 위니브에 오신 것을 환영합니다.</p>
+      <a class="login-link" href="#none">
+        <img class="login-link-icon" src="./img/weniv-logo.png" alt="winiv" />
+        로그인
+      </a>
+      <div class="container-find-idpw">
+        <img class="find-idpw-img" src="./img/icon-lock.png" alt="" />
+        <a class="link-id" href="#none"> 아이디 </a>
+        <a class="link-pw" href="#none"> 비밀번호찾기</a>
+      </div>
+      <div class="container-sign-up">
+        <img class="img-sign-up" src="./img/icon-user.png" alt="" />
+        <a class="link-sign-up" href="#none">회원가입</a>
+      </div>
+    </article>
+  </body>
+</html>
