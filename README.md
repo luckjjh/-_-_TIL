@@ -10,7 +10,7 @@
 > HTML의 기초, Section 구분, HTML Tag의 용도
 #### 03/30(수)
 [제주코딩베이스캠프 HTML 강의](https://github.com/luckjjh/LikeLion_FrontEndSchool_TIL/tree/main/0330)
-> Grouping Contents, Text-level Semantics
+> Grouping Content, Text-level Semantic
 #### 03/31(목)
 [제주코딩베이스캠프 GitHub, HTML 강의](https://github.com/luckjjh/LikeLion_FrontEndSchool_TIL/tree/main/0331)
 > Embedded content, 로그인 페이지 구현, GitHub 활용 방법
