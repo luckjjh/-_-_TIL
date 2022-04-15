@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>로또 번호 추첨기</title>
+    <style>
+      .ball {
+        display: inline-block;
+        margin: 10px;
+        width: 50px;
+        height: 50px;
+        border: 1px solid black;
+        text-align: center;
+        font-size: 25px;
+        border-radius: 50%;
+      }
+      .ball1 {
+        background-color: lightcoral;
+      }
+      .ball2 {
+        background-color: lightgreen;
+      }
+      .ball3 {
+        background-color: lightseagreen;
+      }
+      .ball4 {
+        background-color: lightgoldenrodyellow;
+      }
+      .ball5 {
+        background-color: lightsalmon;
+      }
+      .ball6 {
+        background-color: limegreen;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>로또 번호 추첨기</h1>
+
+    <script>
+      let ball = [];
+      while (ball.length < 6) {
+        let num = parseInt(Math.random() * 45 + 1);
+        if (ball.indexOf(num) == -1) {
+          //배열에 num 없으면 -1 반환 되는 함수
+          ball.push(num);
+        }
+      }
+      ball.sort((a, b) => a - b);
+      /* (a, b) => a - b 수식 입력 안하면 앞자리 수부터 비교해서 정렬함 */
+
+      for (let i = 1; i <= 6; i++) {
+        document.write(
+          "<div class='ball ball" + i + "'>" + ball[i - 1] + "</div>"
+        );
+      }
+    </script>
+  </body>
+</html>

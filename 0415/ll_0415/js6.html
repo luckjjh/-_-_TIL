@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>jQuery 기초</title>
+  </head>
+  <style></style>
+  <body>
+    <h1>jQuery 기초</h1>
+    <textarea name="" id="content" cols="30" rows="10">
+jQuery를 배워보자</textarea
+    >
+    <button id="click">click!</button>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      /* 
+        jQuery의 장검 
+        1. 간결한 문법
+        2. 편리한 API
+        3. 크로스 브라우징 문제 해결 가능 */
+      console.log($("#content").val());
+
+      function hello() {
+        console.log("hello");
+      }
+      //$("#click").click(hello);
+      //함수 이름만 넘기면 됨
+      $("#click").click(function () {
+        console.log("hello");
+      });
+    </script>
+  </body>
+</html>

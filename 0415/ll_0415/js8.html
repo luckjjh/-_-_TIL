@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Object</title>
+  </head>
+  <body>
+    <script>
+      let now = new Date();
+      console.log(now.getFullYear());
+      console.log(now.getHours());
+      console.log(now.getDate());
+      let christ = new Date("2020-12-25");
+      console.log(christ);
+      let ms = new Date(1000);
+      console.log(ms);
+      let obj = {
+        cnt: 1,
+        name: "jh",
+        sayHello: function () {
+          console.log("hello");
+        },
+      };
+      console.log(obj.name);
+      obj.sayHello();
+    </script>
+  </body>
+</html>
