@@ -47,3 +47,11 @@
 #### 04/14(목)
 [제주코딩베이스캠프 CSS 강의](https://github.com/luckjjh/LikeLion_FrontEndSchool_TIL/tree/main/0414)
 > flex, grid, CSS transition, transform
+
+#### 04/15(금)
+[일단 만드는 JavaScript & 실검에 오르는 세렝게티 동물 테스트 만들기](https://github.com/luckjjh/LikeLion_FrontEndSchool_TIL/tree/main/0415)
+> JavaScript 기초, jQuery, bootstrap, MBTI TEST web 개발
+
+#### 04/18(월)
+[제주코딩베이스캠프 CSS 강의](https://github.com/luckjjh/LikeLion_FrontEndSchool_TIL/tree/main/0418)
+> CSS 설계 기법, weniv-login-page-with-modal 과제 code review
