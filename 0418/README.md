@@ -16,7 +16,7 @@
 
     - skin
 
-          font, color, background, border 등 레이아웃에 영향을 미치지 않지만, 시각적인 영향을 주는 속성을 skin에 해당하는 CSS 요소로 분류한다.
+      font, color, background, border 등 레이아웃에 영향을 미치지 않지만, 시각적인 영향을 주는 속성을 skin에 해당하는 CSS 요소로 분류한다.
 
       > cf. 요소의 스타일이 container(부모요소)에 종속되지 않도록 해야한다. 즉, 컨텐츠 스타일 선택자에 container의 class를 배제 시킨다.
 
