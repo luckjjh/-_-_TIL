@@ -55,3 +55,13 @@
 #### 04/18(월)
 [제주코딩베이스캠프 CSS 강의](https://github.com/luckjjh/LikeLion_FrontEndSchool_TIL/tree/main/0418)
 > CSS 설계 기법, weniv-login-page-with-modal 과제 code review
+
+#### 04/19(화)
+[제주코딩베이스캠프 CSS 강의](https://github.com/luckjjh/LikeLion_FrontEndSchool_TIL/tree/main/0419)
+> CSS 실무 테크닉, custom select btn 과제 code review
+
+
+#### 04/20(수)
+[제주코딩베이스캠프 CSS 강의](https://github.com/luckjjh/LikeLion_FrontEndSchool_TIL/tree/main/0420)
+> CSS 실무 테크닉, vending-machine 과제 code review, media query를 활용한 반응형 웹
+
