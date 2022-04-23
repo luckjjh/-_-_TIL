@@ -65,3 +65,6 @@
 [제주코딩베이스캠프 CSS 강의](https://github.com/luckjjh/LikeLion_FrontEndSchool_TIL/tree/main/0420)
 > CSS 실무 테크닉, vending-machine 과제 code review, media query를 활용한 반응형 웹
 
+#### 04/21(목)
+[제주코딩베이스캠프 CSS 강의](https://github.com/luckjjh/LikeLion_FrontEndSchool_TIL/tree/main/0421)
+> animation, perspective, Media Query, svg활용
