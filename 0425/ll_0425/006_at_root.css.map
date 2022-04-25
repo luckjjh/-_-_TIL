@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": ";AAAA,AAAA,IAAI,CAAC;EACH,KAAK,EAAE,GAAG;CAQX;;AATD,AAEE,IAFE,CAEF,IAAI,CAAC;EACH,KAAK,EAAE,IAAI;CAKZ;;AAJU,AAAD,MAAO,CAAC;EACd,+CAA+C;EAC/C,KAAK,EAAE,KAAK;CACb",
+    "sources": [
+        "006_at_root.scss"
+    ],
+    "names": [],
+    "file": "006_at_root.css"
+}

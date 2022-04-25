@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAEW,AAAD,KAAM,CAAC;EACb,KAAK,EAFC,IAAI;CAGX;;AAGH,AAAA,MAAM,CAAC;EACL,KAAK,EAPG,IAAI;CAQb",
+    "sources": [
+        "011_scope.scss"
+    ],
+    "names": [],
+    "file": "011_scope.css"
+}

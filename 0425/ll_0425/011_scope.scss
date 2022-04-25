@@ -1,0 +1,10 @@
+.one_ {
+  $value: pink !global;
+  @at-root .two_ {
+    color: $value;
+  }
+}
+
+.three {
+  color: $value;
+}

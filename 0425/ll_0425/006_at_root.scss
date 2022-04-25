@@ -1,0 +1,10 @@
+.one {
+  color: red;
+  .two {
+    color: blue;
+    @at-root .three {
+      /* 필요에 따라 중첩을 빠져나오고 싶을 때 사용*/
+      color: green;
+    }
+  }
+}

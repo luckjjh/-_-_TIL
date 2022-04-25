@@ -1,0 +1,13 @@
+$global-value: blue;
+//전역 변수
+.one {
+  $value: red; //지역 변수, 지역에서만 사용 가능!
+  color: $value;
+}
+
+.one_ {
+  $value2: pink;
+  @at-root .two_ {
+    color: $value2;
+  }
+}

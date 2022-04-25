@@ -1,0 +1,10 @@
+%base-box {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+} //얘는 컴파일 되지 않게 됨
+
+.box {
+  @extend %base-box;
+  border: 5px solid black;
+}

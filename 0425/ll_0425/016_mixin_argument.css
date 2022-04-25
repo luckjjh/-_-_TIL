@@ -1,0 +1,12 @@
+.card {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+}
+
+.card-default {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+}
+/*# sourceMappingURL=016_mixin_argument.css.map */

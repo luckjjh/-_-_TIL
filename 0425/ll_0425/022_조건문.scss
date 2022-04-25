@@ -1,0 +1,30 @@
+// Scss - if, else if, else문
+// Sass 공식문서
+// 조건에 해당하는 방향에 맞춰서 border-bottom 컬러를 스타일함
+@mixin button($color) {
+  @if $color == black {
+    font-size: 32px;
+    color: $color;
+    background-color: white;
+  } @else if $color == white {
+    font-size: 24px;
+    background-color: black;
+    color: $color;
+  } @else {
+    font-size: 16px;
+    background-color: blue;
+    color: $color;
+  }
+}
+
+.btn-1 {
+  @include button(black);
+}
+
+.btn-2 {
+  @include button(red);
+}
+
+.btn-3 {
+  @include button(white);
+}

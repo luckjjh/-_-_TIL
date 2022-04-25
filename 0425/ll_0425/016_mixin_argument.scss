@@ -1,0 +1,15 @@
+$color: pink;
+
+@mixin box($color) {
+  width: 100px;
+  height: 100px;
+  background-color: $color;
+}
+
+.card {
+  @include box(red);
+}
+
+.card-default {
+  @include box(blue);
+}
