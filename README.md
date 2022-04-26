@@ -68,3 +68,12 @@
 #### 04/21(목)
 [제주코딩베이스캠프 CSS 강의](https://github.com/luckjjh/LikeLion_FrontEndSchool_TIL/tree/main/0421)
 > animation, perspective, Media Query, svg활용
+
+#### 04/25(월)
+[제주코딩베이스캠프 CSS 강의](https://github.com/luckjjh/LikeLion_FrontEndSchool_TIL/tree/main/0425)
+> SASS(SCSS)활용, 문법
+
+#### 04/26(화)
+[제주코딩베이스캠프 CSS 강의](https://github.com/luckjjh/LikeLion_FrontEndSchool_TIL/tree/main/0426)
+> SASS(SCSS) 복습, Bootstrap, 기업 code convention
+
