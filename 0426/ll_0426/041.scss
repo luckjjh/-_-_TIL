@@ -1,0 +1,10 @@
+$value: 5;
+
+@while $value>1 {
+  $value: $value - 1;
+  .content-#{$value} {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+  }
+}

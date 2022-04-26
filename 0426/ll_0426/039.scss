@@ -1,0 +1,8 @@
+@for $i from 1 to 100 {
+  .photo-box-#{$i} {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    font-size: $i + px;
+  }
+}

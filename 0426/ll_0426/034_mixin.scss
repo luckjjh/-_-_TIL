@@ -1,0 +1,9 @@
+@mixin custom-button($width, $height) {
+  width: $width;
+  height: $height;
+  border-radius: 5px;
+}
+
+.btn {
+  @include custom-button(100px, 30px);
+}
