@@ -77,3 +77,11 @@
 [제주코딩베이스캠프 CSS 강의](https://github.com/luckjjh/LikeLion_FrontEndSchool_TIL/tree/main/0426)
 > SASS(SCSS) 복습, Bootstrap, 기업 code convention
 
+#### 04/27(수)
+[제주코딩베이스캠프 CSS 강의](https://github.com/luckjjh/LikeLion_FrontEndSchool_TIL/tree/main/0427)
+> Tailwind CSS, JavaScript 기초
+
+#### 04/26(목)
+[제주코딩베이스캠프 CSS 강의](https://github.com/luckjjh/LikeLion_FrontEndSchool_TIL/tree/main/0428)
+> Web의 역사, JavaScript 변수 & 자료형
+
