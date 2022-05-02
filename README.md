@@ -35,6 +35,7 @@
 > 노션을 활용한 협업, 노션으로 간단한 이력서 작성하기
 #### 04/10(일)
 [천하제일캐릭터대회 캐릭터 디자인](https://github.com/luckjjh/LikeLion_FrontEndSchool_TIL/tree/main/0410)
+### 3주차
 #### 04/11(월)
 [제주코딩베이스캠프 CSS 강의](https://github.com/luckjjh/LikeLion_FrontEndSchool_TIL/tree/main/0411)
 > CSS 중앙정렬, position, sticky, fixed, z-index
@@ -51,7 +52,7 @@
 #### 04/15(금)
 [일단 만드는 JavaScript & 실검에 오르는 세렝게티 동물 테스트 만들기](https://github.com/luckjjh/LikeLion_FrontEndSchool_TIL/tree/main/0415)
 > JavaScript 기초, jQuery, bootstrap, MBTI TEST web 개발
-
+### 4주차
 #### 04/18(월)
 [제주코딩베이스캠프 CSS 강의](https://github.com/luckjjh/LikeLion_FrontEndSchool_TIL/tree/main/0418)
 > CSS 설계 기법, weniv-login-page-with-modal 과제 code review
@@ -69,6 +70,7 @@
 [제주코딩베이스캠프 CSS 강의](https://github.com/luckjjh/LikeLion_FrontEndSchool_TIL/tree/main/0421)
 > animation, perspective, Media Query, svg활용
 
+### 5주차
 #### 04/25(월)
 [제주코딩베이스캠프 CSS 강의](https://github.com/luckjjh/LikeLion_FrontEndSchool_TIL/tree/main/0425)
 > SASS(SCSS)활용, 문법
@@ -81,7 +83,13 @@
 [제주코딩베이스캠프 CSS 강의](https://github.com/luckjjh/LikeLion_FrontEndSchool_TIL/tree/main/0427)
 > Tailwind CSS, JavaScript 기초
 
-#### 04/26(목)
+#### 04/28(목)
 [제주코딩베이스캠프 CSS 강의](https://github.com/luckjjh/LikeLion_FrontEndSchool_TIL/tree/main/0428)
 > Web의 역사, JavaScript 변수 & 자료형
 
+#### 04/29(금)
+
+[이보라 강사님 Git 특강](https://github.com/luckjjh/LikeLion_FrontEndSchool_TIL/tree/main/0429)
+> Git, Github, 리눅스 명령어, 오픈소스 
+
+### 6주차
