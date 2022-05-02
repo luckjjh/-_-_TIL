@@ -93,3 +93,6 @@
 > Git, Github, 리눅스 명령어, 오픈소스 
 
 ### 6주차
+#### 05/02(월)
+[제주코딩베이스캠프 JavaScript 강의](https://github.com/luckjjh/LikeLion_FrontEndSchool_TIL/tree/main/0502)
+> JavaScript 변수 & 자료형, JavaScript의 문제점들
