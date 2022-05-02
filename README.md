@@ -72,19 +72,19 @@
 
 ### 5주차
 #### 04/25(월)
-[제주코딩베이스캠프 CSS 강의](https://github.com/luckjjh/LikeLion_FrontEndSchool_TIL/tree/main/0425)
+[제주코딩베이스캠프 SASS 강의](https://github.com/luckjjh/LikeLion_FrontEndSchool_TIL/tree/main/0425)
 > SASS(SCSS)활용, 문법
 
 #### 04/26(화)
-[제주코딩베이스캠프 CSS 강의](https://github.com/luckjjh/LikeLion_FrontEndSchool_TIL/tree/main/0426)
+[제주코딩베이스캠프 SASS, Bootstrap 강의](https://github.com/luckjjh/LikeLion_FrontEndSchool_TIL/tree/main/0426)
 > SASS(SCSS) 복습, Bootstrap, 기업 code convention
 
 #### 04/27(수)
-[제주코딩베이스캠프 CSS 강의](https://github.com/luckjjh/LikeLion_FrontEndSchool_TIL/tree/main/0427)
+[제주코딩베이스캠프 Tailwind CSS, JavaScript 강의](https://github.com/luckjjh/LikeLion_FrontEndSchool_TIL/tree/main/0427)
 > Tailwind CSS, JavaScript 기초
 
 #### 04/28(목)
-[제주코딩베이스캠프 CSS 강의](https://github.com/luckjjh/LikeLion_FrontEndSchool_TIL/tree/main/0428)
+[제주코딩베이스캠프 JavaScript 강의](https://github.com/luckjjh/LikeLion_FrontEndSchool_TIL/tree/main/0428)
 > Web의 역사, JavaScript 변수 & 자료형
 
 #### 04/29(금)
