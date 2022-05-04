@@ -35,10 +35,10 @@
         배열 맨 뒤에 items 요소를 반환하고 제거한다.
     3) arr.shift(items)
     
-        배열 맨 앞에 items 요소를 추가한다. 새로운 배열의 길이를 반환한다.
+        배열 맨 앞에 items 요소를 반환하고 제거한다.
     4) arr.unshift(items)
     
-        배열 맨 앞에 items 요소를 반환하고 제거한다.
+        배열 맨 앞에 items 요소를 추가한다. 새로운 배열의 길이를 반환한다.
 
   * splice / slice
     
