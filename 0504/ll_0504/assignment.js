@@ -113,6 +113,8 @@ dataset.map(i=>i.gender).forEach(i=>{
         femaleRatio++;
     }
 });
+
+
 maleRatio /= dataset.length;
 femaleRatio /= dataset.length;
 maleRatio = maleRatio.toFixed(2);
