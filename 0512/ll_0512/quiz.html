@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <style>
+        .blue{
+            background-color: blue;
+        }
+        .green{
+            background-color: green;
+        }
+        .red{
+            background-color: red;
+        }
+        .box{
+            margin: 0 auto;
+            margin-top: 100px;
+            width: 500px;
+            height: 500px;
+        }
+        .btn-wrapper{
+            display: flex;
+            margin: 50px auto;
+            width: 500px;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <div class="btn-wrapper">
+        <button class="blueBtn">blue</button>
+        <button class="greenBtn">green</button>
+        <button class="redBtn">red</button>
+    </div>
+
+    <h3>원본 요소:</h3>
+    <p id="source">
+        <style>#source { color: red; }</style>
+        아래에서<br>이 글을<br>어떻게 인식하는지 살펴보세요.
+        <span style="display:none">숨겨진 글</span>
+    </p>
+    <h3>textContent 결과:</h3>
+    <textarea id="textContentOutput" rows="6" cols="30" readonly>...</textarea>
+    <h3>innerText 결과:</h3>
+    <textarea id="innerTextOutput" rows="6" cols="30" readonly>...</textarea>
+    <h3>innerHTML 결과:</h3>
+    <textarea id="innerHTMLOutput" rows="6" cols="30" readonly>...</textarea>
+    <script>
+        let box = document.querySelector(".box").classList;
+        let button = document.querySelectorAll("button");
+        function changeColor(color){
+            let colorArr = ['green','blue','red'];
+            colorArr.splice(colorArr.indexOf(color),1);
+            colorArr.forEach( i =>{
+                box.remove(i);
+            });
+            box.toggle(color);
+        }
+        button.forEach( i =>{
+            i.addEventListener("click",()=>{
+                changeColor(i.classList[0].slice(0,-3));
+            })
+        })
+        /*document.querySelector(".blueBtn").addEventListener("click",()=>{
+            changeColor("blue")
+        });
+        document.querySelector(".greenBtn").addEventListener("click",()=>{
+            changeColor("green")
+        });
+        document.querySelector(".redBtn").addEventListener("click",()=>{
+            changeColor("red")
+        });*/
+        const source = document.getElementById('source');
+        const textContentOutput = document.getElementById('textContentOutput');
+        const innerTextOutput = document.getElementById('innerTextOutput');
+        const innerHTMLOutput = document.getElementById('innerHTMLOutput');
+
+        textContentOutput.innerHTML = source.textContent;
+        innerTextOutput.innerHTML = source.innerText;
+        innerHTMLOutput.innerHTML = source.innerHTML;
+    </script>
+</body>
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carousel</title>
+    <link rel="stylesheet" href="./reset.css">
+    <style>
+        img{
+            width: 300px;
+            height: 300px;
+        }
+        .wrapper{
+            display: flex;
+            justify-content: center;
+        }
+
+        .carousel{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 200px;
+            width: 1000px;
+            height: 500px;
+            background-color: beige;
+            perspective: 1000px;
+            overflow: hidden;
+        }
+        .carousel-item{
+            overflow: hidden;
+            flex-shrink: 0;
+            border-radius: 15px;
+            border: 1px solid #BDBDBD;
+            background-color: #FFF;
+        }
+        .carousel-item.vertical-item{
+            position: absolute;
+            left: -9999px;
+            transition: all linear 0.5s;
+        }
+        .carousel-item.vertical-item.left{
+            transform: rotateY(-60deg);
+        }
+        .carousel-item.vertical-item.right{
+            transform: rotateY(60deg);
+        }
+        .carousel-item.hidden-item{
+            display: none;
+            transition: all linear 0.5s;
+        }
+        .carousel-item.left-item{
+            margin-right: -20px;
+            transform: rotateY(-45deg);
+            transition: all linear 0.5s;
+        }
+        .carousel-item.center-item{
+            transform: translateZ(140px) rotateY(0deg);
+            transition: all linear 0.5s;
+        }
+        .carousel-item.right-item{
+            margin-left: -20px;
+            transform: rotateY(45deg);
+            transition: all linear 0.5s;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <article class="carousel">
+            <div class="carousel-item vertical-item"></div>
+            <div class="carousel-item left-item"></div>
+            <div class="carousel-item center-item"></div>
+            <div class="carousel-item right-item"></div>
+            <div class="carousel-item vertical-item"></div>
+            <div class="carousel-item hidden-item"></div>
+        </article>
+    </div>
+    
+
+    <script>
+        let imgArr = ['./img/jamanbo.png','./img/ninetail.png','./img/pickachu.png','./img/purin.png','./img/pyri.png', './img/see.png'];
+        let carouselItems = document.querySelectorAll(".carousel-item");
+        let carouselBox = document.querySelector(".carousel");
+        for(let i = 0; i < carouselItems.length; i++){
+            let curImg = document.createElement('img');
+            curImg.setAttribute('src',imgArr[i]);
+            // 이미지 지정
+            carouselItems[i].appendChild(curImg);
+        }
+
+        
+        carouselBox.addEventListener("click",(e)=>{
+            let itemArr = document.querySelectorAll(".carousel-item");
+            if(e.clientX<(window.innerWidth/2)){//케러셀 기준 왼쪽 클릭
+                console.log("왼쪽");
+                let nextHiddenItem = itemArr[0];
+                let nextVerticalItem1 = itemArr[1];
+                let nextLeftItem = itemArr[2];
+                let nextCenterItem = itemArr[3];
+                let nextRightItem = itemArr[4];
+                let nextVerticalItem2 = itemArr[5];
+
+                nextHiddenItem.classList.remove("vertical-item");
+                nextHiddenItem.classList.remove("left");
+                nextHiddenItem.classList.add("hidden-item");
+                carouselBox.append(nextHiddenItem);
+
+                nextVerticalItem1.classList.remove("left-item");
+                nextVerticalItem1.classList.add("vertical-item");
+                nextVerticalItem1.classList.add("left");
+
+                nextLeftItem.classList.remove("center-item");
+                nextLeftItem.classList.add("left-item");
+
+                nextCenterItem.classList.remove("right-item");
+                nextCenterItem.classList.add("center-item");
+
+                nextRightItem.classList.remove("vertical-item");
+                nextHiddenItem.classList.remove("right");
+                nextRightItem.classList.add("right-item");
+
+                nextVerticalItem2.classList.remove("hidden-item");
+                nextVerticalItem2.classList.add("vertical-item");
+                nextVerticalItem2.classList.add("right");
+            }else{//케러셀 기준 오른쪽 클릭
+                console.log("오른쪽");
+                let nextVerticalItem1 = itemArr[itemArr.length-1];
+                let nextLeftItem = itemArr[0]
+                let nextCenterItem = itemArr[1];
+                let nextRightItem = itemArr[2];
+                let nextVertiaclItem2 = itemArr[3];
+                let nextHiddenItem = itemArr[4];
+                
+                nextVerticalItem1.classList.remove("hidden-item");
+                nextVerticalItem1.classList.add("vertical-item");
+                nextVerticalItem1.classList.add("left");
+                carouselBox.prepend(nextVerticalItem1);
+
+                nextLeftItem.classList.remove("vertical-item");
+                nextHiddenItem.classList.remove("left");
+                nextLeftItem.classList.add("left-item");
+
+                nextCenterItem.classList.remove("left-item");
+                nextCenterItem.classList.add("center-item");
+
+                nextRightItem.classList.remove("center-item");
+                nextRightItem.classList.add("right-item");
+
+                nextVertiaclItem2.classList.remove("right-item");
+                nextVertiaclItem2.classList.add("vertical-item");
+                nextVertiaclItem2.classList.add("right");
+
+                nextHiddenItem.classList.remove("vertical-item");
+                nextHiddenItem.classList.remove("right");
+                nextHiddenItem.classList.add("hidden-item");
+            }
+        })
+
+    </script>
+</body>
+</html>
