@@ -104,3 +104,6 @@
 #### 05/04(수)
 [제주코딩베이스캠프 JavaScript 강의](https://github.com/luckjjh/LikeLion_FrontEndSchool_TIL/tree/main/0504)
 > JavaScript Array & method
+
+
+### 7주차
