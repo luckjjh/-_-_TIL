@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>실습</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+            transition: 0.1s;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    <script>
+        let posX = 0;
+        let posY = 0;
+        let keys = {};
+        //현재 key의 상태를 저장해 놓는 변수
+        let $div = document.querySelector('div');
+
+        function move(e){
+            keys[event.key] = true;
+            console.log(keys);
+        }
+
+        function stop(e){
+            keys[event.key] = false;
+        }
+
+        document.addEventListener("keydown",move);
+        document.addEventListener("keyup",stop);
+        
+        function play(){
+            if(keys.ArrowRight){
+                posX+=5;
+                $div.style.transform = `translate(${posX}px,${posY}px)`;
+            }
+            if(keys.ArrowLeft){
+                posX-=5;
+                $div.style.transform = `translate(${posX}px,${posY}px)`;
+            }
+            if(keys.ArrowUp){
+                posY-=5;
+                $div.style.transform = `translate(${posX}px,${posY}px)`;
+            }
+            if(keys.ArrowDown){
+                posY+=5;
+                $div.style.transform = `translate(${posX}px,${posY}px)`;
+            }
+            window.requestAnimationFrame(play);
+        }
+
+        window.requestAnimationFrame(play);
+        
+        /* window.addEventListener("keydown",animate);
+        window.addEventListener("keyup",(e)=>{
+        })
+        function animate(e){
+            if(e.key==="ArrowRight"){
+                posX+=5;
+                $div.style.transform = `translate(${posX}px,${posY}px)`;
+            }else if(e.key==="ArrowLeft"){
+                posX-=5;
+                $div.style.transform = `translate(${posX}px,${posY}px)`;
+            }else if(e.key==="ArrowUp"){
+                posY-=5;
+                $div.style.transform = `translate(${posX}px,${posY}px)`;
+            }else if(e.key==="ArrowDown"){
+                posY+=5;
+                $div.style.transform = `translate(${posX}px,${posY}px)`;
+            }
+        }*/
+    </script>
+</body>
+</html>
